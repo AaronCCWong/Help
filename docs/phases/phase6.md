@@ -4,7 +4,7 @@
 ### Models
 
 ### Controllers
-Api::PicturesController
+* Api::PicturesController
 
 ### Views
 

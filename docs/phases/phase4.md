@@ -4,8 +4,8 @@
 ### Models
 
 ### Controllers
-Api::RestaurantsController (search)
-Api::ReviewsController (search)
+* Api::RestaurantsController (search)
+* Api::ReviewsController (search)
 
 ### Views
 

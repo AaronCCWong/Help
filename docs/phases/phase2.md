@@ -4,8 +4,8 @@
 ### Models
 
 ### Controllers
-Api::RestaurantsController (create, index, show)
-Api::ReviewsController (create, destroy, show, update)
+* Api::RestaurantsController (create, index, show)
+* Api::ReviewsController (create, destroy, show, update)
 
 ### Views
 * restaurants/show.json.jbuilder

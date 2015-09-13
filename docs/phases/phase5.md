@@ -4,14 +4,14 @@
 ### Models
 
 ### Controllers
-Api::UsefulController
-Api::FunnyController
-Api::CoolController
+* Api::UsefulController
+* Api::FunnyController
+* Api::CoolController
 
 ### Views
-reviews/useful.json.jbuilder
-reviews/funny.json.jbuilder
-reviews/cool.json.jbuilder
+* reviews/useful.json.jbuilder
+* reviews/funny.json.jbuilder
+* reviews/cool.json.jbuilder
 
 ## Backbone
 ### Models
