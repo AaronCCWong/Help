@@ -1,24 +1,26 @@
-# Flux-capacitr
+# Help - App Academy Lunch
 
-[Heroku link][heroku]
+<!-- [Heroku link][heroku] -->
 
-[heroku]: http://flux-capacitr.herokuapp.com
+<!-- [heroku]: http://flux-capacitr.herokuapp.com -->
 
 ## Minimum Viable Product
-Flux-capacitr is a clone of Tumblr built on Rails and Backbone. Users can:
+Help - App Academy Lunch is a clone of Yelp created to solve the problem of
+never knowing what to eat for lunch. Users can:
 
 <!-- This is a Markdown checklist. Use it to keep track of your progress! -->
 
-- [x] Create accounts
-- [x] Create sessions (log in)
-- [x] Create blogs
-- [x] Create blog posts
-- [ ] View blogs and posts
-- [ ] Subscribe to blogs
-- [ ] View a feed of subscribed blogs
-- [ ] Tag blog posts
-- [ ] Search for blogs by title
-- [ ] Search for posts by tag
+- [ ] Create accounts
+- [ ] Create sessions (log in)
+- [ ] Add local restaurants to database
+- [ ] Create reviews
+- [ ] View restaurant information
+- [ ] View restaurant reviews
+- [ ] Add google maps plugin for map to restaurant
+- [ ] Search for restaurants by name
+- [ ] Search for restaurants by taggings
+- [ ] Vote on the helpfulness of reviews
+- [ ] Image posts
 
 ## Design Docs
 * [View Wireframes][views]
@@ -29,63 +31,67 @@ Flux-capacitr is a clone of Tumblr built on Rails and Backbone. Users can:
 
 ## Implementation Timeline
 
-### Phase 1: User Authentication, Blog Creation (~1 day)
-I will implement user authentication in Rails based on the practices learned at
-App Academy. By the end of this phase, users will be able to create blogs using
-a simple text form in a Rails view. The most important part of this phase will
-be pushing the app to Heroku and ensuring that everything works before moving on
-to phase 2.
+### Phase 1: User Authentication, Seed Database, Review Creation (~1 day)
+I will implement user authentication in rails. By the end of this phase, users
+will be able to log in and review restaurants that are already in the database.
+The website will not be limited to users who are signed up but only signed up
+users can write reviews. Pushing to Heroku is the most important part of this
+day.
 
 [Details][phase-one]
 
-### Phase 2: Viewing Blogs and Posts (~2 days)
-I will add API routes to serve blog and post data as JSON, then add Backbone
-models and collections that fetch data from those routes. By the end of this
-phase, users will be able to create blogs and view both blogs and posts, all
-inside a single Backbone app.
+### Phase 2: Writing reviews, viewing reviews of other users (~2 days)
+I will be adding API routes to serve restaurant and review data as JSON. I will
+then add Backbone models and collections for restaurants and reviews that fetch
+from these routes. At the end of this phase, users will be able to view basic
+restaurant information. Users will also be able to see the reviews of other
+users.
 
 [Details][phase-two]
 
-### Phase 3: Editing and Displaying Posts (~2 days)
-I plan to use third-party libraries to add functionality to the `PostForm` and
-`PostShow` views in this phase. First I'll need to add a Markdown editor to the
-`PostForm`, and make sure that the Markdown is properly escaped and formatted in
-the `PostShow` view. I also plan to integrate Filepicker for file upload so
-users can add images to blog posts.
+### Phase 3: Adding Google maps plugin (~1 day)
+I will add the google maps javascript plugin to generate maps that will give the
+users viewing specific restaurants the directions to those restaurants based on
+the location that the user is viewing the reviews from. By the end of this phase
+users should be able to see a map on the review page of a restaurant with the
+closest train station to the restaurant.
 
 [Details][phase-three]
 
-### Phase 4: User Feeds (~1-2 days)
-I'll start by adding a `feed` route that uses the `current_user`'s
-`subscribed_blogs` association to serve a list of blog posts ordered
-chronologically. On the Backbone side, I'll make a `FeedShow` view whose `posts`
-collection fetches from the new route.  Ultimately, this will be the page users
-see after logging in.
+### Phase 4: Searching for restaurants (~1-2 days)
+I will add a search routes to the restaurants. I will implement a search results
+composite view in backbone that will use the restaurant and review collections.
+These collections would fetch from the search routes. At the end of this phase,
+users should be able to use the search bar to find restaurants either by name
+or by food type.
 
 [Details][phase-four]
 
-### Phase 5: Searching for Blogs and Posts (~2 days)
-I'll need to add `search` routes to both the Blogs and Posts controllers. On the
-Backbone side, there will be a `SearchResults` composite view has `BlogsIndex`
-and `PostsIndex` subviews. These views will use plain old `blogs` and `posts`
-collections, but they will fetch from the new `search` routes.
+### Phase 5: Allow users to vote on reviews (~1 day)
+I will implement user voting on reviews. I will implement reviews by adding new
+columns to the review table that will hold the number of votes that the review
+has gotten. I will use three separate columns to hold the number of votes for
+userful, funny, and cool. Users will only be able to vote once for each column.
+Clicking on the button to vote for a column that they have already voted on will
+remove their vote. By the end of this phase, users will be able to vote on
+whether a review from another user is useful, funny, or cool.
+
+###Phase 6: Allow users to post pictures of restaurants (~1-2 day)
+I will add a pictures collection in backbone. This will allow users to post
+pictures that they took while in the restaurant. I will also allow users to
+add a description to their uploaded pictures.
 
 [Details][phase-five]
 
 ### Bonus Features (TBD)
-- [ ] "Like" button and counter for posts
-- [ ] Custom blog urls
-- [ ] Pagination/infinite scroll
-- [ ] Activity history (e.g. likes, reblogs, taggings)
-- [ ] Post types (image posts, quote posts, etc)
-- [ ] Reblogging
-- [ ] Multiple sessions/session management
 - [ ] User avatars
+- [ ] Track number of reviews for each user
 - [ ] Typeahead search bar
+- [ ] Mobile friendly
 
 [phase-one]: ./docs/phases/phase1.md
 [phase-two]: ./docs/phases/phase2.md
 [phase-three]: ./docs/phases/phase3.md
 [phase-four]: ./docs/phases/phase4.md
 [phase-five]: ./docs/phases/phase5.md
-
+[phase-six]: ./docs/phases/phase6.md
