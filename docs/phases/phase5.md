@@ -1,13 +1,17 @@
-# Phase 5: Searching for Blogs and Posts
+# Phase 4: User Feeds
 
 ## Rails
 ### Models
 
 ### Controllers
-Api::BlogsController (search)
-Api::PostsController (search)
+Api::UsefulController
+Api::FunnyController
+Api::CoolController
 
 ### Views
+reviews/useful.json.jbuilder
+reviews/funny.json.jbuilder
+reviews/cool.json.jbuilder
 
 ## Backbone
 ### Models
@@ -15,8 +19,8 @@ Api::PostsController (search)
 ### Collections
 
 ### Views
-* BlogSearchItem
-* SearchShow (composite view, contains BlogsIndex and PostsIndex subviews)
+* UsefulShow (subview of review composite view)
+* FunnyShow (subview of review composite view)
+* CoolShow (subview of review composite view)
 
 ## Gems/Libraries
-

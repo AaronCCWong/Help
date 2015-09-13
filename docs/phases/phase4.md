@@ -1,13 +1,13 @@
-# Phase 4: User Feeds
+# Phase 5: Searching for Blogs and Posts
 
 ## Rails
 ### Models
 
 ### Controllers
-Api::PostsController (feed)
+Api::RestaurantsController (search)
+Api::ReviewsController (search)
 
 ### Views
-posts/feed.json.jbuilder
 
 ## Backbone
 ### Models
@@ -15,6 +15,7 @@ posts/feed.json.jbuilder
 ### Collections
 
 ### Views
-* FeedShow (composite view, contains PostsIndex subview)
+* RestaurantSearchItem
+* SearchShow (composite view, contains RestaurantsIndex and ReviewsIndex subviews)
 
 ## Gems/Libraries
