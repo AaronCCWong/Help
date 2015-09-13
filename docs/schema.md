@@ -1,39 +1,41 @@
 # Schema Information
 
-## blogs
+## restaurants
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-owner_id    | integer   | not null, foreign key (references users)
-title       | string    | not null
+name        | string    | not null
 
-## followings
-column name | data type | details
-------------|-----------|-----------------------
-id          | integer   | not null, primary key
-blog_id     | integer   | not null, foreign key (references blogs)
-follower_id | integer   | not null, foreign key (references users)
+## reviews
+column name   | data type | details
+--------------|-----------|-----------------------
+id            | integer   | not null, primary key
+restaurant_id | integer   | not null, foreign key (references restaurants)
+user_id       | integer   | not null, foreign key (references users)
+useful        | integer   | not null, default: 0
+funny         | integer   | not null, default: 0
+cool          | integer   | not null, default: 0
 
-## posts
+## useful
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-author_id   | integer   | not null, foreign key (references users)
-title       | string    | not null
-body        | string    |
+user_id     | integer   | not null, foreign key (references users)
+review_id   | integer   | not null, foreign key (references reviews)
 
-## tags
+## funny
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-label       | string    | not null, unique
+user_id     | integer   | not null, foreign key (references users)
+review_id   | integer   | not null, foreign key (references reviews)
 
-## taggings
+## cool
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-post_id     | integer   | not null, foreign key (references posts)
-tag_id      | integer   | not null, foreign key (references tags)
+user_id     | integer   | not null, foreign key (references users)
+review_id   | integer   | not null, foreign key (references reviews)
 
 ## users
 column name     | data type | details
@@ -43,3 +45,9 @@ email           | string    | not null, unique
 password_digest | string    | not null
 session_token   | string    | not null, unique
 
+## taggings
+column name     | data type | details
+----------------|-----------|-----------------------
+id              | integer   | not null, primary key
+restaurant_id   | integer   | not null, foreign key (references restaurants)
+tag             | string    | not null

@@ -69,12 +69,12 @@ or by food type.
 
 ### Phase 5: Allow users to vote on reviews (~1 day)
 I will implement user voting on reviews. I will implement reviews by adding new
-columns to the review table that will hold the number of votes that the review
-has gotten. I will use three separate columns to hold the number of votes for
-userful, funny, and cool. Users will only be able to vote once for each column.
-Clicking on the button to vote for a column that they have already voted on will
-remove their vote. By the end of this phase, users will be able to vote on
-whether a review from another user is useful, funny, or cool.
+tables to the database that will hold the number of votes that the review
+has gotten. I will use three separate tables to hold the number of votes for
+userful, funny, and cool. Users will only be able to vote once for each upvote
+type. Clicking on the button to vote for a column that they have already voted
+on will remove their vote. By the end of this phase, users will be able to vote
+on whether a review from another user is useful, funny, or cool.
 
 ###Phase 6: Allow users to post pictures of restaurants (~1-2 day)
 I will add a pictures collection in backbone. This will allow users to post
