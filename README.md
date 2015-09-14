@@ -20,7 +20,7 @@ never knowing what to eat for lunch. Users can:
 - [ ] Search for restaurants by name
 - [ ] Search for restaurants by taggings
 - [ ] Vote on the helpfulness of reviews
-- [ ] Image posts
+- [ ] Add image posts
 
 ## Design Docs
 * [View Wireframes][views]
@@ -35,8 +35,8 @@ never knowing what to eat for lunch. Users can:
 I will implement user authentication in rails. By the end of this phase, users
 will be able to log in and review restaurants that are already in the database.
 The website will not be limited to users who are signed up but only signed up
-users can write reviews. Pushing to Heroku is the most important part of this
-day.
+users can write reviews. Users will also have a show page to update their
+profiles. Pushing to Heroku is the most important part of this day.
 
 [Details][phase-one]
 
@@ -84,9 +84,13 @@ add a description to their uploaded pictures.
 [Details][phase-five]
 
 ### Bonus Features (TBD)
+- [ ] Paginate search results
+- [ ] User star rating of a restaurant
 - [ ] User avatars
 - [ ] Track number of reviews for each user
+- [ ] Search filters
 - [ ] Typeahead search bar
+- [ ] User review quotes on restaurants show page
 - [ ] Mobile friendly
 
 [phase-one]: ./docs/phases/phase1.md

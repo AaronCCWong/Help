@@ -3,24 +3,24 @@
 ## New Session
 ![new-session]
 
-## Feed Show (landing page)
-![feed-show]
+## Restaurant Show
+![restaurant-show]
 
-## Blog Show
-![blog-show]
+## Review Form
+![review-form]
 
-## Post Show
-![post-show]
-
-## Post Form
-![post-form]
+## Root Page
+![root-page]
 
 ## Search Results
-![search-results]
+![search-show-page]
+
+## User Show
+![user-show-page]
 
 [new-session]: ./wireframes/new_session.png
-[feed-show]: ./wireframes/feed_show.png
-[blog-show]: ./wireframes/blog_show.png
-[post-show]: ./wireframes/post_show.png
-[post-form]: ./wireframes/post_form.png
-[search-results]: ./wireframes/search_results.png
+[restaurant-show]: ./wireframes/restaurant_show.png
+[review-form]: ./wireframes/review_form.png
+[root-page]: ./wireframes/root_page.png
+[search-show-page]: ./wireframes/search_show_page.png
+[user-show-page]: ./wireframes/user_show_page.png
