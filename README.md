@@ -1,11 +1,11 @@
-# Help - App Academy Lunch
+# Help - What's for lunch?
 
 <!-- [Heroku link][heroku] -->
 
 <!-- [heroku]: http://flux-capacitr.herokuapp.com -->
 
 ## Minimum Viable Product
-Help - App Academy Lunch is a clone of Yelp created to solve the problem of
+Help - What's for lunch? is a clone of Yelp created to solve the problem of
 never knowing what to eat for lunch. Users can:
 
 <!-- This is a Markdown checklist. Use it to keep track of your progress! -->
