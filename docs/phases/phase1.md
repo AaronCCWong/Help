@@ -9,8 +9,8 @@
 ### Controllers
 * UsersController (create, new, show, edit, update)
 * SessionsController (create, new, destroy)
-* RestaurantsController (create, new, show)
-* ReviewsController (create, new, show)
+* RestaurantsController (index, create, new, show)
+* ReviewsController (index, create, new, show, update, edit, destroy)
 
 ### Views
 * users/new.html.erb

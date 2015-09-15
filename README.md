@@ -1,6 +1,6 @@
 # Help - What's for lunch?
 
-<!-- [Heroku link][heroku] -->
+[Heroku link][heroku]
 
 [heroku]: http://help-whats-for-lunch.herokuapp.com
 
@@ -12,8 +12,9 @@ never knowing what to eat for lunch. Users can:
 
 - [x] Create accounts
 - [x] Create sessions (log in)
-- [ ] Add local restaurants to database
+- [x] Create restaurants
 - [ ] Create reviews
+- [ ] Add local restaurants to database
 - [ ] View restaurant information
 - [ ] View restaurant reviews
 - [ ] Add google maps plugin for map to restaurant
@@ -33,10 +34,11 @@ never knowing what to eat for lunch. Users can:
 
 ### Phase 1: User Authentication, Seed Database, Review Creation (~1 day)
 I will implement user authentication in rails. By the end of this phase, users
-will be able to log in and review restaurants that are already in the database.
-The website will not be limited to users who are signed up but only signed up
-users can write reviews. Users will also have a show page to update their
-profiles. Pushing to Heroku is the most important part of this day.
+will be able to log in, add restaurants, and review restaurants that are already
+in the database. The website will not be limited to users who are signed up but
+only signed up users can add restaurants and write reviews. Users will also have
+a show page to update their profiles. Pushing to Heroku is the most important
+part of this day.
 
 [Details][phase-one]
 
