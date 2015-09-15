@@ -10,8 +10,8 @@ never knowing what to eat for lunch. Users can:
 
 <!-- This is a Markdown checklist. Use it to keep track of your progress! -->
 
-- [ ] Create accounts
-- [ ] Create sessions (log in)
+- [v] Create accounts
+- [v] Create sessions (log in)
 - [ ] Add local restaurants to database
 - [ ] Create reviews
 - [ ] View restaurant information

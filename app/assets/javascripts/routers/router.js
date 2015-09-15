@@ -16,7 +16,10 @@ YelpClone.Routers.Router = Backbone.Router.extend({
 
   new: function() {
     var model = new YelpClone.Models.Restaurant();
-    var view = new YelpClone.Views.RestaurantsForm({ model: model });
+    var view = new YelpClone.Views.RestaurantsForm({
+      model: model,
+      collection: this.collection
+    });
     this._swapView(view);
   },
 

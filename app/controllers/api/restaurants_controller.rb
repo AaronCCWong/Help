@@ -1,4 +1,9 @@
-class RestaurantsController < ApplicationController
+class Api::RestaurantsController < ApplicationController
+  def index
+    @restaurants = Restaurant.all
+    render json: @restaurants
+  end
+
   def create
     @restaurant = Restaurant.new(restaurant_params)
     if @restaurant.save

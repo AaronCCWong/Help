@@ -4,7 +4,8 @@ window.YelpClone = {
   Views: {},
   Routers: {},
   initialize: function() {
-    alert('Hello from Backbone!');
+    new YelpClone.Routers.Router({ $rootEl: $('#content') });
+    Backbone.history.start();
   }
 };
 
