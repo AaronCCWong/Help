@@ -1,11 +1,9 @@
-# Phase 5: Searching for Blogs and Posts
+# Phase 3: Editing and Displaying Posts
 
 ## Rails
 ### Models
 
 ### Controllers
-* Api::RestaurantsController (search)
-* Api::ReviewsController (search)
 
 ### Views
 
@@ -15,7 +13,6 @@
 ### Collections
 
 ### Views
-* RestaurantSearchItem
-* SearchShow (composite view, contains RestaurantsIndex and ReviewsIndex subviews)
 
 ## Gems/Libraries
+* Google Maps Javascript API

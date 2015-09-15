@@ -19,7 +19,7 @@ YelpClone.Views.ReviewsForm = Backbone.View.extend({
   createReview: function(event) {
     event.preventDefault();
     var formData = $(event.currentTarget).parent().serializeJSON();
-        debugger
+
     this.model.save(formData.review, {
       success: function(model) {
         this.restaurant.reviews().add(model);

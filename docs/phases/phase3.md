@@ -1,9 +1,10 @@
-# Phase 3: Editing and Displaying Posts
+# Phase 4: User Feeds
 
 ## Rails
 ### Models
 
 ### Controllers
+* Api::PicturesController
 
 ### Views
 
@@ -13,6 +14,6 @@
 ### Collections
 
 ### Views
+* PictureShow (subview of restaurant composite view)
 
 ## Gems/Libraries
-* Google Maps Javascript API
