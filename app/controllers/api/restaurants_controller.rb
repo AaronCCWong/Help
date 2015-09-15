@@ -9,7 +9,7 @@ class Api::RestaurantsController < ApplicationController
     if @restaurant.save
       render json: @restaurant
     else
-      render json: @restaurant, status: 422
+      render json: @restaurant.errors.full_messages, status: 422
     end
   end
 
@@ -20,7 +20,7 @@ class Api::RestaurantsController < ApplicationController
 
   def show
     @restaurant = Restaurant.find(params[:id])
-    render json: @restaurant
+    render :show
   end
 
   private
