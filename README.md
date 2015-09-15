@@ -2,7 +2,7 @@
 
 <!-- [Heroku link][heroku] -->
 
-<!-- [heroku]: http://flux-capacitr.herokuapp.com -->
+[heroku]: http://help-whats-for-lunch.herokuapp.com
 
 ## Minimum Viable Product
 Help - What's for lunch? is a clone of Yelp created to solve the problem of
@@ -10,8 +10,8 @@ never knowing what to eat for lunch. Users can:
 
 <!-- This is a Markdown checklist. Use it to keep track of your progress! -->
 
-- [v] Create accounts
-- [v] Create sessions (log in)
+- [x] Create accounts
+- [x] Create sessions (log in)
 - [ ] Add local restaurants to database
 - [ ] Create reviews
 - [ ] View restaurant information
