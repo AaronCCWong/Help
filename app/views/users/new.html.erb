@@ -4,5 +4,17 @@
     name="authenticity_token"
     value="<%= form_authenticity_token %>">
 
-    <label>Username</label>
+    <label>First Name</label>
+    <input type="text" name="user[first_name]"><br>
+
+    <label>Last Name</label>
+    <input type="text" name="user[last_name]"><br>
+
+    <label>Email</label>
+    <input type="text" name="user[email]"><br>
+
+    <label>Password</label>
+    <input type="password" name="user[password]"><br>
+
+    <button>Sign Up</button>
 </form>
