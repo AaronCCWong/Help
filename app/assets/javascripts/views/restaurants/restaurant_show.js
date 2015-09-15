@@ -1,10 +1,6 @@
 YelpClone.Views.RestaurantShow = Backbone.CompositeView.extend({
   template: JST['restaurants/show'],
 
-  events: {
-    'click button.write-review': 'reviewForm'
-  },
-
   initialize: function() {
     this.listenTo(this.model, "sync", this.render);
   },
@@ -17,10 +13,5 @@ YelpClone.Views.RestaurantShow = Backbone.CompositeView.extend({
     }.bind(this));
 
     return this;
-  },
-
-  reviewForm: function(event) {
-    event.preventDefault();
-
   }
 });

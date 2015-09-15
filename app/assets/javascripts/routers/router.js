@@ -32,11 +32,11 @@ YelpClone.Routers.Router = Backbone.Router.extend({
 
   reviewNew: function(restaurant_id) {
     var restaurant = this.restaurantCollection.getOrFetch(restaurant_id);
-    var model = new YelpClone.Models.Review();
+    var model = new YelpClone.Models.Review({ restaurant_id: restaurant_id });
     var view = new YelpClone.Views.ReviewsForm({
       model: model,
       restaurant: restaurant
-    })
+    });
     this._swapView(view);
   },
 

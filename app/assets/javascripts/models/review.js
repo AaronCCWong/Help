@@ -1,3 +1,5 @@
 YelpClone.Models.Review = Backbone.Model.extend({
-  urlRoot: '/api/reviews'
+  urlRoot: function() {
+    return '/api/restaurants/' + this.get('restaurant_id') + '/reviews';
+  }
 });

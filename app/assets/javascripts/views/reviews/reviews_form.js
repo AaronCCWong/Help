@@ -14,5 +14,20 @@ YelpClone.Views.ReviewsForm = Backbone.View.extend({
   render: function() {
     this.$el.html(this.template({ restaurant: this.restaurant }));
     return this;
+  },
+
+  createReview: function(event) {
+    event.preventDefault();
+    var formData = $(event.currentTarget).parent().serializeJSON();
+        debugger
+    this.model.save(formData.review, {
+      success: function(model) {
+        this.restaurant.reviews().add(model);
+        Backbone.history.navigate(
+          "#/restaurants/" + this.restaurant.id,
+          { trigger: true }
+        )
+      }.bind(this)
+    });
   }
 });
