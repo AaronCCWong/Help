@@ -2,9 +2,10 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+      sign_in!(@user)
       render json: @user
     else
-      render json: @user, status: 422
+      render :new
     end
   end
 
