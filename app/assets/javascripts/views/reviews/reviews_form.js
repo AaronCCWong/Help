@@ -11,7 +11,6 @@ YelpClone.Views.ReviewsForm = Backbone.View.extend({
   },
 
   render: function() {
-    debugger
     this.$el.html(this.template({ restaurant: this.restaurant }));
     return this;
   }
