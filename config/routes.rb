@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'root#home'
+
   resources :users
   resource :session, only: [:create, :new, :destroy]
 
