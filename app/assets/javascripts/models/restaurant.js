@@ -6,6 +6,7 @@ YelpClone.Models.Restaurant = Backbone.Model.extend({
       this.reviews().set(response.reviews);
       delete(response.reviews);
     }
+    
     return response;
   },
 

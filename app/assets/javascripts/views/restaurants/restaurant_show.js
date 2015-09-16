@@ -9,7 +9,7 @@ YelpClone.Views.RestaurantShow = Backbone.CompositeView.extend({
     this.$el.html(this.template({ restaurant: this.model }));
     this.model.reviews().each(function(review) {
       var view = new YelpClone.Views.ReviewsListItem({ model: review });
-      this.addSubview(this.$el, view);
+      this.addSubview(this.$el.find('ul.reviews'), view);
     }.bind(this));
 
     return this;
