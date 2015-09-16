@@ -1,0 +1,6 @@
+<div id="search-bar"></div>
+<% if !signed_in? %>
+  <%= link_to('Log In', new_session_url) %>
+<% else %>
+  <%= link_to('Log Out', '/session', method: 'DELETE') %>
+<% end %>

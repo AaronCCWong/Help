@@ -14,14 +14,15 @@ never knowing what to eat for lunch. Users can:
 - [x] Create sessions (log in)
 - [x] Create restaurants
 - [x] Create reviews
+- [ ] Add root page
 - [ ] Add local restaurants to database
 - [ ] View restaurant information
 - [ ] View restaurant reviews
+- [ ] Add image posts
 - [ ] Add google maps plugin for map to restaurant
 - [ ] Search for restaurants by name
 - [ ] Search for restaurants by taggings
 - [ ] Vote on the helpfulness of reviews
-- [ ] Add image posts
 
 ## Design Docs
 * [View Wireframes][views]
@@ -42,12 +43,12 @@ part of this day.
 
 [Details][phase-one]
 
-### Phase 2: Writing reviews, viewing reviews of other users (~2 days)
+### Phase 2: Writing reviews, viewing reviews of other users, home page (~2 days)
 I will be adding API routes to serve restaurant and review data as JSON. I will
 then add Backbone models and collections for restaurants and reviews that fetch
 from these routes. At the end of this phase, users will be able to view basic
 restaurant information. Users will also be able to see the reviews of other
-users.
+users as well as the site home page.
 
 [Details][phase-two]
 
