@@ -1,14 +1,52 @@
-<form action="<%= session_url %>" method="POST">
-  <input
-    type="hidden"
-    name="authenticity_token"
-    value="<%= form_authenticity_token %>">
+<div class="sign_in_page group">
+  <div class="log_in_wrapper">
 
-    <label>Email</label>
-    <input type="text" name="user[email]"><br>
+    <form action="<%= session_url %>" method="POST">
+      <h1>Log In</h1>
+      <p class="log_in_instructions">
+        Please enter your email address and password to log in.
+      </p>
 
-    <label>Password</label>
-    <input type="password" name="user[password]"><br>
+      <input
+        type="hidden"
+        name="authenticity_token"
+        value="<%= form_authenticity_token %>">
 
-    <button>Sign In</button>
-</form>
+        <p>
+          <label class="log_in_label">Email Address</label>
+          <input type="text" name="user[email]">
+        </p>
+
+        <p>
+          <label class="log_in_label">Password</label>
+          <input type="password" name="user[password]">
+        </p>
+
+        <p class="button">
+          <button class="sign_in_button">Log In</button>
+        </p>
+
+        <p class="legal">
+          By logging in you agree that Help has helped.
+        </p>
+    </form>
+  </div>
+
+  <div class="no_account_wrapper">
+    <div class="no_account_width">
+      <h1>No Account Yet?</h1>
+      <p>
+        That's okay, we don't love you but you can still join.
+      </p>
+
+      <a href="<%= new_user_url %>">Sign Up</a>
+
+      <p class="help-description">
+        Help is the fun and easy way to find, review, and talk about what's great
+        - and not so great - in your local NY App Academy area. It's about real
+        App Academy students giving their honest and personal opinions on lunch
+        places near App Academy.
+      </p>
+    </div>
+  </div>
+</div>

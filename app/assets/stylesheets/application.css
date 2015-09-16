@@ -16,8 +16,10 @@
 
 /* RESET */
 
-html, body, header, form, img, div,
-ul, li, h1, h2, h3, a, p {
+html, body, header,
+form, img,
+div, ul, li, h1, h2,
+h3, a, p {
   margin: 0;
   border: 0;
   padding: 0;

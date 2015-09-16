@@ -3,7 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .new_user_page {
-  border: 1px solid black;
   border-top: none;
   width: 960px;
   margin: 0 auto;
@@ -18,7 +17,8 @@
   width: 300px;
 }
 
-.sign_up_wrapper input[type=text], input[type=password] {
+.sign_up_wrapper input[type=text],
+.sign_up_wrapper input[type=password] {
   display: block;
   width: 100%;
   margin: 0 0 9px;
@@ -70,4 +70,17 @@
   background: #ea050b;
   border: 1px solid #a50508;
   box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+
+.has-account {
+  color: #999;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.5em;
+  margin-top: 12px;
+  text-align: right;
+}
+
+.has-account > a {
+  color: #3b65a7;
 }

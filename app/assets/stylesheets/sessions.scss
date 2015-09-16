@@ -1,3 +1,128 @@
 // Place all the styles related to the Sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Log In Form */
+
+.sign_in_page {
+  border-top: none;
+  width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 15px 30px 30px;
+  border: 1px solid #ccccc8;
+}
+
+.log_in_wrapper {
+  float: left;
+  display: block;
+  width: 49%;
+  border-right: 1px solid #ddd;
+}
+
+.log_in_wrapper > form {
+  width: 350px;
+  padding-left: 48px;
+}
+
+.log_in_label {
+  font-weight: bold;
+  display: block;
+  float: left;
+  margin-top: 15px;
+  width: 140px;
+  color: #C41200;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.log_in_wrapper > form > p > input {
+  text-align: left;
+  margin-top: 10px;
+  width: 200px;
+}
+
+.sign_in_button {
+  text-shadow: none;
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+  padding: 5px 8px;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.2);
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.5em;
+  color: #333;
+  background: linear-gradient(#fff, #eee);
+}
+
+.log_in_wrapper > form > h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #c41200;
+  margin: 10px 0 6px;
+}
+
+.log_in_wrapper > form > .log_in_instructions {
+  margin: 5px 0;
+}
+
+.log_in_wrapper > form > .button {
+  margin: 10px 0 20px;
+  text-align: right;
+}
+
+.log_in_wrapper > form > .legal {
+  color: #333;
+  margin-top: 60px;
+}
+
+/* Link To Sign Up */
+
+.no_account_wrapper {
+  float: right;
+  display: block;
+  width: 50%;
+  text-align: center;
+  color: #333;
+}
+
+.no_account_width {
+  float: right;
+  width: 390px;
+  padding-right: 48px;
+}
+
+.no_account_width > h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #c41200;
+  margin: 10px 0 6px;
+}
+
+.no_account_width > p {
+  margin-bottom: 15px;
+}
+
+.no_account_width > .help-description {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.no_account_width > a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  text-shadow: 0 -1px 0 #760400;
+  line-height: 1.28571em;
+  padding: 7px 16px;
+  border: 1px solid #a50508;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+  background: #ea050b;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-image: linear-gradient(#ff2000 2%, #ea050b 10%, #d40d04 100%);
+}
