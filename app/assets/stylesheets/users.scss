@@ -1,3 +1,73 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.new_user_page {
+  border: 1px solid black;
+  border-top: none;
+  width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
+  min-height: 720px;
+  padding: 30px;
+  border: 1px solid #ccccc8;
+}
+
+.sign_up_wrapper {
+  padding: 0 15px;
+  width: 300px;
+}
+
+.sign_up_wrapper input[type=text], input[type=password] {
+  display: block;
+  width: 100%;
+  margin: 0 0 9px;
+  box-sizing: border-box;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+  padding: 5px;
+  border-radius: 2px;
+  background: rgba(250,250,249,0.9);
+  border: 1px solid #bbb;
+  font-size: 14px;
+  line-height: 1.28571em;
+}
+
+.name > li {
+  width: 49%;
+  font-size: 0;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.name > .first_name {
+  float: left;
+}
+
+.name > .last_name {
+  float: right;
+}
+
+.legal {
+  text-align: left;
+  margin-bottom: 12px;
+  color: #555;
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.sign_up_wrapper button {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 7px 16px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  text-shadow: 0 -1px 0 #760400;
+  width: 100%;
+  background: #ea050b;
+  border: 1px solid #a50508;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
