@@ -1,15 +1,75 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+/* RESET */
+
+html, body, header, img
+ul, li, h1, h2, h3, a, p {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+
+  box-sizing: inherit;
+  font: inherit;
+  text-decoration: inherit;
+  text-align: inherit;
+  color: inherit;
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+/* CLEARFIX */
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Header */
+
+header {
+  position: relative;
+  font-size: 14px;
+  text-shadow: 0 -1px 0 #760400;
+  line-height: 1.28571em;
+  z-index: 5;
+  box-shadow: 0 0 5px rgba(78,2,2,0.76);
+  color: #fff;
+  background: url('header_stars.png'), no-repeat, center, linear-gradient(#c41200, #af0606);
+  background-position: left top;
+  border-bottom: 1px solid #853330;
+  padding: 12px 0 6px;
+}
+
+.user_session {
+  float: right;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.user_session_list > li {
+  display: list-item;
+}
+
+.sign_up_button {
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 6px;
+  padding: 5px 16px;
+  line-height: 18px;
+  vertical-align: middle;
+  box-shadow: none;
+  border: 1px solid #7b0000;
+  border-radius: 3px;
+  background: #a20000;
+  background: linear-gradient(#be0100 4%, #a20000 5%, #7c0000 100%);
+}
+
+.sign_up_button:hover {
+  background: #8f0000;
+  background-image: linear-gradient(#a00100 4%, #8f0000 5%, #600 100%);
+}

@@ -1,0 +1,45 @@
+/* RESET */
+
+
+html, body, header,
+ul, li, h1, h2, h3, a, p {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+
+  box-sizing: inherit;
+  font: inherit;
+  text-decoration: inherit;
+  text-align: inherit;
+  color: inherit;
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+/* CLEARFIX */
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Header */
+
+header {
+  position: relative;
+  font-size: 14px;
+  line-height: 1.28571em;
+  z-index: 5;
+  box-shadow: 0 0 5px rgba(78,2,2,0.76);
+  color: #fff;
+  background: url(images/header_stars.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  border-bottom: 1px solid #853330;
+  height: 75px;
+}

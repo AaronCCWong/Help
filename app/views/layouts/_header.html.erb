@@ -1,6 +1,13 @@
-<div id="search-bar"></div>
-<% if !signed_in? %>
-  <%= link_to('Log In', new_session_url) %>
-<% else %>
-  <%= link_to('Log Out', '/session', method: 'DELETE') %>
-<% end %>
+<header class="group">
+  <div id="search-bar"></div>
+  <div class="user_session">
+    <% if !signed_in? %>
+    <ul class="user_session_list">
+      <li><%= link_to('Sign Up', new_user_url, class: 'sign_up_button') %></li>
+      <li><%= link_to('Log In', new_session_url) %></li>
+    </ul>
+    <% else %>
+      <%= link_to('Log Out', '/session', method: 'DELETE') %>
+    <% end %>
+  </div>
+</header>
