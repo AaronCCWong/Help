@@ -15,7 +15,8 @@ never knowing what to eat for lunch. Users can:
 - [x] Create restaurants
 - [x] Create reviews
 - [x] View restaurant reviews
-- [ ] User star rating of a restaurant
+- [x] User star rating of a restaurant
+- [ ] Implement omniauth
 - [ ] Allow users to add avatars
 - [ ] Add root page
 - [ ] Add local restaurants to database
