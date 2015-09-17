@@ -1,5 +1,5 @@
 YelpClone.Collections.Reviews = Backbone.Collection.extend({
-  models: YelpClone.Models.Review,
+  model: YelpClone.Models.Review,
 
   initialize: function(model, options) {
     this.restaurant = options.restaurant;

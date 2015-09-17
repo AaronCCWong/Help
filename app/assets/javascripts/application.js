@@ -15,6 +15,8 @@
 //= require serialize_json
 //= require underscore
 //= require backbone
+//= require jquery.raty
+//= require ratyrate 
 //= require yelp_clone
 //= require_tree ../templates
 //= require_tree ./utils

@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'ratyrate'
 gem 'serialize_json-rails'
 gem 'backbone-on-rails'
 gem 'newrelic_rpm'

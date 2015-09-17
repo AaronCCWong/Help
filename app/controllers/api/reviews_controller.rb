@@ -7,7 +7,7 @@ class Api::ReviewsController < ApplicationController
   def create
     @review = current_user.reviews.new(review_params)
     if @review.save
-      render json: @review
+      render :show
     else
       render json: @review.errors.full_messages, status: 422
     end
@@ -33,6 +33,6 @@ class Api::ReviewsController < ApplicationController
   private
 
   def review_params
-    params.require(:review).permit(:body, :restaurant_id)
+    params.require(:review).permit(:body, :restaurant_id, :rating)
   end
 end
