@@ -9,6 +9,7 @@ YelpClone.Routers.Router = Backbone.Router.extend({
   initialize: function(options) {
     this.restaurantCollection = new YelpClone.Collections.Restaurants();
     this.restaurantCollection.fetch();
+
     this.$rootEl = options.$rootEl;
   },
 
@@ -26,17 +27,17 @@ YelpClone.Routers.Router = Backbone.Router.extend({
 
   restaurantShow: function(id) {
     var model = this.restaurantCollection.getOrFetch(id);
-    var view = new YelpClone.Views.RestaurantShow({ model: model });
+    var view = new YelpClone.Views.RestaurantShow({
+      model: model,
+      usersCollection: this.usersCollection
+    });
     this._swapView(view);
   },
 
   reviewNew: function(restaurant_id) {
     var restaurant = this.restaurantCollection.getOrFetch(restaurant_id);
     var model = new YelpClone.Models.Review({ restaurant_id: restaurant_id });
-    var view = new YelpClone.Views.ReviewsForm({
-      model: model,
-      restaurant: restaurant
-    });
+    var view = new YelpClone.Views.ReviewsForm({ model: model });
     this._swapView(view);
   },
 
