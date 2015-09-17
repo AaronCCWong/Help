@@ -1,10 +1,6 @@
-<div class="restaurant-show-top">
-  <%= restaurant.escape("name") %>
-  <br>
-  <%= restaurant.escape("address") %>
-  <a href="#/restaurants/<%= restaurant.id %>/reviews/new">Write a Review</a>
-</div>
+<%= restaurant.escape("name") %>
+<br>
+<%= restaurant.escape("address") %>
+<a href="#/restaurants/<%= restaurant.id %>/reviews/new">Write a Review</a>
 
-<div class="restaurant-main-content">
-  <ul class="reviews"></ul>
-</div>
+<ul class="reviews"></ul>
