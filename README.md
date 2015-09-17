@@ -14,10 +14,12 @@ never knowing what to eat for lunch. Users can:
 - [x] Create sessions (log in)
 - [x] Create restaurants
 - [x] Create reviews
+- [x] View restaurant reviews
+- [ ] User star rating of a restaurant
+- [ ] Allow users to add avatars
 - [ ] Add root page
 - [ ] Add local restaurants to database
 - [ ] View restaurant information
-- [ ] View restaurant reviews
 - [ ] Add image posts
 - [ ] Add google maps plugin for map to restaurant
 - [ ] Search for restaurants by name
@@ -48,14 +50,16 @@ I will be adding API routes to serve restaurant and review data as JSON. I will
 then add Backbone models and collections for restaurants and reviews that fetch
 from these routes. At the end of this phase, users will be able to view basic
 restaurant information. Users will also be able to see the reviews of other
-users as well as the site home page.
+users as well as the site home page. Users will also be able to give a star
+rating of a restaurant.
 
 [Details][phase-two]
 
-###Phase 3: Allow users to post pictures of restaurants (~1-2 day)
-I will add a pictures collection in backbone. This will allow users to post
-pictures that they took while in the restaurant. I will also allow users to
-add a description to their uploaded pictures.
+###Phase 3: Allow users to post pictures of restaurants and avatars (~1-2 day)
+I will add a pictures collection in backbone. I will allow users to upload an
+avatar. This will allow users to post pictures that they took while in the
+restaurant. I will also allow users to add a description to their uploaded
+pictures.
 
 [Details][phase-three]
 
@@ -90,8 +94,6 @@ on whether a review from another user is useful, funny, or cool.
 
 ### Bonus Features (TBD)
 - [ ] Paginate search results
-- [ ] User star rating of a restaurant
-- [ ] User avatars
 - [ ] Track number of reviews for each user
 - [ ] Search filters
 - [ ] Typeahead search bar
