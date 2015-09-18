@@ -1,4 +1,4 @@
-class SessionsController < ApplicationController
+class Api::SessionsController < ApplicationController
   def create
     user = User.find_by_credentials(
       params[:user][:email],
@@ -6,18 +6,22 @@ class SessionsController < ApplicationController
     )
     if user
       sign_in!(user)
-      render json: user
+      render :show
     else
-      render :new
+      render json: {}
     end
   end
 
-  def new
-    render :new
+  def show
+    if current_user
+      render :show
+    else
+      render json: {}
+    end
   end
 
   def destroy
     sign_out!
-    redirect_to new_session_url
+    render json: {}
   end
 end

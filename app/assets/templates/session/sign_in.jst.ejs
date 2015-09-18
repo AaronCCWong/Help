@@ -1,16 +1,11 @@
 <div class="sign_in_page group">
   <div class="log_in_wrapper">
 
-    <form action="<%= session_url %>" method="POST">
+    <form class="sign_in">
       <h1>Log In</h1>
       <p class="log_in_instructions">
         Please enter your email address and password to log in.
       </p>
-
-      <input
-        type="hidden"
-        name="authenticity_token"
-        value="<%= form_authenticity_token %>">
 
         <p>
           <label class="log_in_label">Email Address</label>
@@ -39,7 +34,7 @@
         That's okay, we don't love you but you can still join.
       </p>
 
-      <a href="<%= new_user_url %>">Sign Up</a>
+      <a href="#/users/new">Sign Up</a>
 
       <p class="help-description">
         Help is the fun and easy way to find, review, and talk about what's great

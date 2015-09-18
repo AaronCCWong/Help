@@ -1,11 +1,6 @@
 <div class="new_user_page">
   <div class="sign_up_wrapper group">
-    <form action="<%= users_url %>" method="POST">
-      <input
-        type="hidden"
-        name="authenticity_token"
-        value="<%= form_authenticity_token %>">
-
+    <form>
         <ul>
           <div class="name group">
             <li class="first_name">
@@ -32,10 +27,10 @@
           you agree that Help has helped.
         </p>
 
-        <button>Sign Up</button>
+        <button class="sign-up">Sign Up</button>
 
         <p class="has-account">
-          Already on Help? <a href="<%= new_session_url %>">Log In</a>
+          Already on Help? <a href="#/session/new">Log In</a>
         </p>
     </form>
   </div>

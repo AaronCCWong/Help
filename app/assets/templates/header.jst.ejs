@@ -1,0 +1,17 @@
+<div class="main-header group">
+  <div id="search-bar"></div>
+  <div class="user_session">
+    <% if (currentUser.isSignedIn()) { %>
+      <a class="sign-out-link" href="#/session/new">Log Out</a>
+    <% } else { %>
+      <ul class="user_session_list">
+        <li>
+          <a class="sign_up_button" href="#/users/new">Sign Up</a>
+        </li>
+        <li>
+          <a class="log_in_button" href="#/session/new">Log In</a>
+        </li>
+      </ul>
+    <% } %>
+  </div>
+</div>
