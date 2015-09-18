@@ -16,12 +16,12 @@ never knowing what to eat for lunch. Users can:
 - [x] Create reviews
 - [x] View restaurant reviews
 - [x] User star rating of a restaurant
-- [ ] Implement omniauth
+- [x] Implement omniauth
 - [ ] Allow users to add avatars
+- [ ] Add image posts
 - [ ] Add root page
 - [ ] Add local restaurants to database
 - [ ] View restaurant information
-- [ ] Add image posts
 - [ ] Add google maps plugin for map to restaurant
 - [ ] Search for restaurants by name
 - [ ] Search for restaurants by taggings
@@ -36,7 +36,7 @@ never knowing what to eat for lunch. Users can:
 
 ## Implementation Timeline
 
-### Phase 1: User Authentication, Seed Database, Review Creation (~1 day)
+### Phase 1: User Authentication, Review Creation (~1 day)
 I will implement user authentication in rails. By the end of this phase, users
 will be able to log in, add restaurants, and review restaurants that are already
 in the database. The website will not be limited to users who are signed up but

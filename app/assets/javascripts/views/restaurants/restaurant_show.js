@@ -12,6 +12,10 @@ YelpClone.Views.RestaurantShow = Backbone.CompositeView.extend({
       this.addSubview(this.$el.find('ul.reviews'), view);
     }.bind(this));
 
+    var map = new YelpClone.Views.GoogleMapShow();
+    this.$el.find('#map').html(map.$el);
+    map.render();
+
     return this;
   }
 });
