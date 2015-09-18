@@ -1,8 +1,9 @@
 <%= restaurant.escape("name") %>
-<br>
-<%= restaurant.escape("address") %>
 
-<div id="map"></div>
+<div class="map-container">
+  <div id="map"></div>
+  <%= restaurant.escape("address") %>
+</div>
 
 <a href="#/restaurants/<%= restaurant.id %>/reviews/new">Write a Review</a>
 

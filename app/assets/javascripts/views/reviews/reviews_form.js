@@ -32,7 +32,6 @@ YelpClone.Views.ReviewsForm = Backbone.View.extend({
 
     this.model.save(formData.review, {
       success: function(model) {
-        debugger
         this.restaurant.reviews().add(model);
         Backbone.history.navigate(
           "#/restaurants/" + this.restaurant.id,

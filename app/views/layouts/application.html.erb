@@ -5,14 +5,20 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <% if Rails.env.production? %>
+    <% api_key = "key=AIzaSyAbduoxbM7y-xvrJMGrpwP5m4G6KlSJ_0E" %>
+  <% else %>
+    <% api_key = '' %>
+  <% end %>
+
+  <script
+    type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?<%= api_key %>"></script>
 </head>
 <body>
 
   <%= yield %>
-
-  <script
-    type="text/javascript"
-    src="https://maps.googleapis.com/maps/api/js"></script>
 
 </body>
 </html>
