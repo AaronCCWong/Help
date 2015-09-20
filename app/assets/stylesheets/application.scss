@@ -51,16 +51,21 @@ ul {
   clear: both;
 }
 
-html, body, #map-canvas {
+html, body, #map-canvas,
+#map-directions {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
 #map {
-  border: 1px solid black;
   height: 135px;
   width: 286px;
+}
+
+#map-directions {
+  height: 1000px;
+  width: 1000px;
 }
 
 /* Header */

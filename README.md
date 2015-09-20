@@ -22,7 +22,7 @@ never knowing what to eat for lunch. Users can:
 - [ ] Add root page
 - [ ] Add local restaurants to database
 - [ ] View restaurant information
-- [ ] Add google maps plugin for map to restaurant
+- [x] Add google maps plugin for map to restaurant
 - [ ] Search for restaurants by name
 - [ ] Search for restaurants by taggings
 - [ ] Vote on the helpfulness of reviews

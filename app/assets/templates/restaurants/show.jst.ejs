@@ -3,9 +3,17 @@
 <div class="map-container">
   <div id="map"></div>
   <%= restaurant.escape("address") %>
+  <a id="directions-link" href="#/restaurants/<%= restaurant.id %>">
+    Get Directions
+  </a>
 </div>
 
 <a href="#/restaurants/<%= restaurant.id %>/reviews/new">Write a Review</a>
 
 <ul class="reviews"></ul>
 <div id="star-rate"></div>
+
+<div class="map-directions-container">
+  <div id="map-directions"></div>
+  <div id="map-panel"></div>
+</div>
