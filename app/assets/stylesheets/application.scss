@@ -136,3 +136,55 @@ header {
   background-color: #853330;
   box-shadow: inset 0 0 5px rgba(78,2,2,0.76);
 }
+
+/* HOMEPAGE */
+
+.homepage-container {
+  width: 960px;
+  background-color: #fff;
+  margin: 0 auto;
+  border-bottom: 1px solid #ccccc8;
+  border-left: 1px solid #ccccc8;
+  border-right: 1px solid #ccccc8;
+}
+
+.homepage-container > h2 {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+
+  padding-top: 20px;
+  padding-bottom: 10px;
+  display: block;
+  width: 900px;
+  margin: 0 auto;
+
+  border-bottom: 1px solid #e5e5e1;
+}
+
+.recent-reviews-list {
+  width: 630px;
+  margin-left: 30px;
+}
+
+.recent-reviews-list > h1 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 1.28571em;
+  color: #c41200;
+
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.recent-reviews > li {
+  border-top: 1px solid #e5e5e1;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.recent-reviews > li > .review-body {
+  margin-top: 15px;
+  color: #333;
+  font-size: 14px;
+}

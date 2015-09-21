@@ -1,6 +1,6 @@
 class Api::ReviewsController < ApplicationController
   def index
-    @reviews = current_user.reviews
+    @reviews = Review.all
     render json: @reviews
   end
 

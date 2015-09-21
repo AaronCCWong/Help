@@ -17,11 +17,18 @@ YelpClone.Routers.Router = Backbone.Router.extend({
     this.usersCollection = new YelpClone.Collections.Users();
     this.usersCollection.fetch();
 
+    this.reviewsCollection = new YelpClone.Collections.Reviews();
+    this.reviewsCollection.fetch();
+
     this.$rootEl = options.$rootEl;
   },
 
   home: function() {
-    this.$rootEl.html('<p>HI</p>');
+    var view = new YelpClone.Views.Home({
+      collection: this.reviewsCollection
+    });
+
+    this._swapView(view);
   },
 
   restaurantNew: function() {
