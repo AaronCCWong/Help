@@ -44,14 +44,16 @@ YelpClone.Views.RestaurantShow = Backbone.CompositeView.extend({
   },
 
   getDirections: function(event) {
-    event.preventDefault();
+    this.$el.find('.modal-screen').toggleClass('hide')
+    this.$el.find('.modal-map').toggleClass('hide')
 
+    event.preventDefault();
     this.directionsDisplay = new google.maps.DirectionsRenderer();
     this.directionsService = new google.maps.DirectionsService();
     var restaurant = new google.maps.LatLng(this._location.H, this._location.L);
 
     var mapOptions = {
-      zoom: 10,
+      zoom: 11,
       center: restaurant
     }
 
