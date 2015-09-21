@@ -2,7 +2,8 @@ YelpClone.Views.RestaurantShow = Backbone.CompositeView.extend({
   template: JST['restaurants/show'],
 
   events: {
-    'click #directions-link': 'getDirections'
+    'click #directions-link': 'getDirections',
+    'click .close-button': 'closeModal'
   },
 
   initialize: function() {
@@ -80,5 +81,12 @@ YelpClone.Views.RestaurantShow = Backbone.CompositeView.extend({
         this.directionsDisplay.setDirections(response);
       }
     }.bind(this));
+  },
+
+  closeModal: function(event) {
+    event.preventDefault();
+
+    this.$el.find('.modal-screen').toggleClass('hide')
+    this.$el.find('.modal-map').toggleClass('hide')
   }
 });

@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'aws-sdk'
 gem 'paperclip'
 gem 'ratyrate'
 gem 'serialize_json-rails'

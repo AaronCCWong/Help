@@ -19,9 +19,10 @@
   position: absolute;
   z-index: 3;
 
-  top: 100px;
-  left: 50%;
+  top: 200px;
+  left: 35%;
   margin-left: -220px;
+  border-radius: 5px;
 }
 
 .map-directions-container > .modal-container > .modal-map > #map-directions {
@@ -36,4 +37,10 @@
 
 .hide {
   display: none;
+}
+
+.map-directions-container > .modal-container > .modal-map > .close-button {
+  color: #fff;
+  cursor: pointer;
+  font-size: 30px;
 }
