@@ -18,13 +18,17 @@
 .modal-map {
   position: absolute;
   z-index: 3;
+
+  top: 100px;
+  left: 50%;
+  margin-left: -220px;
 }
 
-.map-directions-container > #map-directions {
+.map-directions-container > .modal-container > .modal-map > #map-directions {
   float: left;
 }
 
-.map-directions-container > #map-panel {
+.map-directions-container > .modal-container > .modal-map > #map-panel {
   float: right;
 
   width: 340px;
