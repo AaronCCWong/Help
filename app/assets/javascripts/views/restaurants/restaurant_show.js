@@ -12,9 +12,21 @@ YelpClone.Views.RestaurantShow = Backbone.CompositeView.extend({
 
   render: function() {
     this.$el.html(this.template({ restaurant: this.model }));
+    this.$el.addClass('restaurant-show');
+
+    this.getAverageRating();
+    this.$el.find('#restaurant-average-rating').raty('destroy');
+    this.$el.find('#restaurant-average-rating').raty({
+      path: '/assets/',
+      half: false,
+      score: this.getAverageRating.bind(this),
+      readOnly: true,
+      scoreName: 'restaurant[average-rating]'
+    });
+
     this.model.reviews().each(function(review) {
       var view = new YelpClone.Views.ReviewsListItem({ model: review });
-      this.addSubview(this.$el.find('ul.reviews'), view);
+      this.addSubview(this.$el.find('ul.reviews-list'), view);
     }.bind(this));
 
     this.geocoder = new google.maps.Geocoder();
@@ -27,6 +39,19 @@ YelpClone.Views.RestaurantShow = Backbone.CompositeView.extend({
     this.codeAddress();
 
     return this;
+  },
+
+  getAverageRating: function() {
+    var averageRating = 0;
+    this.model.reviews().each(function(review) {
+      averageRating += parseInt(review.escape('rating'));
+    });
+
+    if (this.model.reviews().length > 0) {
+      return averageRating / this.model.reviews().length;
+    } else {
+      return 0;
+    }
   },
 
   codeAddress: function() {
@@ -86,7 +111,7 @@ YelpClone.Views.RestaurantShow = Backbone.CompositeView.extend({
   closeModal: function(event) {
     event.preventDefault();
 
-    this.$el.find('.modal-screen').toggleClass('hide')
-    this.$el.find('.modal-map').toggleClass('hide')
+    this.$el.find('.modal-screen').toggleClass('hide');
+    this.$el.find('.modal-map').toggleClass('hide');
   }
 });

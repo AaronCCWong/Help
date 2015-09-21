@@ -1,17 +1,29 @@
-<%= restaurant.escape("name") %>
+<div class="top-shelf">
+  <div class="restaurant">
+    <p class="restaurant-name"><%= restaurant.escape("name") %></p>
+    <div id="restaurant-average-rating"></div>
 
-<div class="map-container">
-  <div id="map"></div>
-  <%= restaurant.escape("address") %>
-  <a id="directions-link" href="#/restaurants/<%= restaurant.id %>">
-    Get Directions
-  </a>
+    <div class="map-container">
+      <div id="map"></div>
+      <div class="restaurant-map-info">
+        <div class="address">
+          <%= restaurant.escape("address") %>
+        </div>
+        <a id="directions-link" href="#/restaurants/<%= restaurant.id %>">
+          Get Directions
+        </a>
+      </div>
+    </div>
+    <a class="new-review" href="#/restaurants/<%= restaurant.id %>/reviews/new">Write a Review</a>
+  </div>
 </div>
 
-<a href="#/restaurants/<%= restaurant.id %>/reviews/new">Write a Review</a>
-
-<ul class="reviews"></ul>
-<div id="star-rate"></div>
+<div class="reviews-view">
+  <div class="reviews">
+    <h1>Recommended Reviews</h1>
+    <ul class="reviews-list"></ul>
+  </div>
+</div>
 
 <div class="map-directions-container">
   <div class="modal-container">
