@@ -2,4 +2,10 @@
 
 <p>This is <%= user.escape('first_name') %>'s profile page.</p>
 
-<p><a href="#">Back</a></p>
+<img src="<%= user.escape('avatar_url') %>" class="profile-avatar">
+
+<img src="" id="preview-post-image">
+<form class="upload-avatar">
+  <input type="file" name="user[avatar]" id="input-image">
+  <button>Submit</button>
+</form>

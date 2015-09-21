@@ -6,7 +6,7 @@ YelpClone.Routers.Router = Backbone.Router.extend({
     'restaurants/:id': 'restaurantShow',
     'restaurants/:restaurant_id/reviews/new': 'reviewNew',
     'users/new': 'usersNew',
-    'users/:id': 'show',
+    'users/:id': 'usersShow',
     'session/new': 'signIn'
   },
 
@@ -63,12 +63,13 @@ YelpClone.Routers.Router = Backbone.Router.extend({
   },
 
   usersShow: function(id) {
-    var callback = this.UsersShow.bind(this, id);
+    var callback = this.usersShow.bind(this, id);
     if (!this._requireSignedIn(callback)) { return; }
 
     var model = this.usersCollection.getOrFetch(id);
     var showView = new YelpClone.Views.UsersShow({
-      model: model
+      model: model,
+      collection: this.usersCollection
     });
     this._swapView(showView);
   },

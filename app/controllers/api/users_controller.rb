@@ -1,4 +1,6 @@
 class Api::UsersController < ApplicationController
+  wrap_parameters false
+
   def index
     @users = User.all
     render :index
@@ -20,14 +22,30 @@ class Api::UsersController < ApplicationController
     render :new
   end
 
+  def update
+    @user = User.find(params[:id])
+
+    if @user.update(user_params)
+      render :show
+    else
+      render json: @user.errors.full_messages, status: :unprocessable_entity
+    end
+  end
+
   def show
     @user = User.find(params[:id])
-    render json: @user
+    render :show
   end
 
   protected
 
   def user_params
-    self.params.require(:user).permit(:first_name, :last_name, :email, :password)
+    self.params.require(:user).permit(
+      :first_name,
+      :last_name,
+      :email,
+      :password,
+      :avatar
+    )
   end
 end
