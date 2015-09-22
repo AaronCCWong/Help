@@ -29,6 +29,13 @@
   font-size: 36px;
   font-weight: bold;
   color: #333;
+
+  position: relative;
+}
+
+#restaurant-average-rating {
+  position: absolute;
+  top: 55px;
 }
 
 .restaurant > .new-review {
@@ -48,6 +55,7 @@
 
   padding-left: 22px;
   padding-right: 15px;
+  margin-top: 20px;
 
   float: right;
 }
@@ -92,8 +100,9 @@
 }
 
 .reviews {
-  width: 960px;
+  width: 630px;
   margin: 0 auto;
+  font-size: 14px;
 }
 
 .reviews > h1 {
@@ -102,6 +111,11 @@
   color: #c41200;
   line-height: 1.28571em;
   margin-bottom: 6px;
+}
+
+.reviews > .reviews-list > li {
+  border-top: 1px solid #ccccc8;
+  padding-top: 15px;
 }
 
 /* Directions */

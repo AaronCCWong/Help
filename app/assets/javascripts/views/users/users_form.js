@@ -15,7 +15,7 @@ YelpClone.Views.UsersForm = Backbone.View.extend({
     event.preventDefault();
 
     var userData = $(event.currentTarget).parent().serializeJSON().user;
-    debugger
+
     this.model.set(userData);
     this.model.save({}, {
       success: function() {

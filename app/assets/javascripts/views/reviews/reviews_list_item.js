@@ -11,6 +11,7 @@ YelpClone.Views.ReviewsListItem = Backbone.View.extend({
       review: this.model,
       user: this.model.author()
     }));
+    this.$el.addClass('group');
 
     this.$el.find('#star-rating').raty('destroy');
     this.$el.find('#star-rating').raty({

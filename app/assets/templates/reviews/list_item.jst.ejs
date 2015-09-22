@@ -1,11 +1,11 @@
 
 
-<p>
+<p class="reviewer">
   <%= user.escape('first_name') %> <%= user.escape('last_name') %>
 </p>
 
-<div id="star-rating"></div>
 
-<p class="review-body">
+<section class="review-body">
+  <div id="star-rating"></div>
   <%= review.escape("body") %>
-</p>
+</section>
