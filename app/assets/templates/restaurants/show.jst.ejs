@@ -2,6 +2,10 @@
   <div class="restaurant group">
     <p class="restaurant-name"><%= restaurant.escape("name") %></p>
     <div id="restaurant-average-rating"></div>
+    <div class="restaurant-tags">
+      <ul class="restaurant-tags-list"></ul>
+      <a class="new-tag" href="#/restaurants/<%= restaurant.id %>">Add a Tag</a>
+    </div>
 
     <div class="map-container">
       <div id="map"></div>
@@ -14,7 +18,9 @@
         </a>
       </div>
     </div>
-    <a class="new-review" href="#/restaurants/<%= restaurant.id %>/reviews/new">Write a Review</a>
+    <a class="new-review" href="#/restaurants/<%= restaurant.id %>/reviews/new">
+      Write a Review
+    </a>
   </div>
 </div>
 

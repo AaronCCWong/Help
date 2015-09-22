@@ -120,10 +120,10 @@ header {
 }
 
 #search-bar > .search > .main-search > .pseudo-input {
-  position: absolute;
+  position: relative;
 
-  left: 27%;
-  top: 19px;
+  left: 125px;
+  bottom: 1px;
   z-index: 2;
   font-weight: bold;
   font-size: 14px;

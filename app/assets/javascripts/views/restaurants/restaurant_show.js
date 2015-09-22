@@ -3,7 +3,9 @@ YelpClone.Views.RestaurantShow = Backbone.CompositeView.extend({
 
   events: {
     'click #directions-link': 'getDirections',
-    'click .close-button': 'closeModal'
+    'click .close-button': 'closeModal',
+    'click .new-tag': 'addTags',
+    'submit form.tags': 'newTags'
   },
 
   initialize: function() {
@@ -14,7 +16,6 @@ YelpClone.Views.RestaurantShow = Backbone.CompositeView.extend({
     this.$el.html(this.template({ restaurant: this.model }));
     this.$el.addClass('restaurant-show');
 
-    this.getAverageRating();
     this.$el.find('#restaurant-average-rating').raty('destroy');
     this.$el.find('#restaurant-average-rating').raty({
       path: '',
@@ -23,6 +24,11 @@ YelpClone.Views.RestaurantShow = Backbone.CompositeView.extend({
       readOnly: true,
       scoreName: 'restaurant[average-rating]'
     });
+
+    this.model.taggings().each(function(tag) {
+      var view = new YelpClone.Views.TaggingsListItem({ model: tag });
+      this.addSubview(this.$el.find('ul.restaurant-tags-list'), view);
+    }.bind(this));
 
     this.model.reviews().each(function(review) {
       var view = new YelpClone.Views.ReviewsListItem({ model: review });
@@ -113,5 +119,36 @@ YelpClone.Views.RestaurantShow = Backbone.CompositeView.extend({
 
     this.$el.find('.modal-screen').toggleClass('hide');
     this.$el.find('.modal-map').toggleClass('hide');
+  },
+
+  addTags: function(event) {
+    event.preventDefault();
+
+    var view = new YelpClone.Views.TaggingsForm();
+    this.$el.find('.new-tag').remove();
+    this.$el.find('.restaurant-tags').append(view.render().$el);
+  },
+
+  newTags: function(event) {
+    event.preventDefault();
+
+    $(event.currentTarget).serializeJSON().tagging.tag.split(' ').forEach(
+      function(tag) {
+        var model = new YelpClone.Models.Tagging();
+        var formData = {
+          tag: tag,
+          restaurant_id: this.model.id
+        };
+
+        model.save(formData, {
+          success: function(model) {
+            Backbone.history.navigate(
+              '#/restaurants/' + this.model.id,
+              { trigger: true }
+            )
+          }.bind(this)
+        }
+      )
+    }.bind(this));
   }
 });
