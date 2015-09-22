@@ -19,6 +19,8 @@ gem 'bcrypt'
 gem 'rails_12factor'
 gem 'figaro'
 gem 'omniauth-facebook'
+gem 'pg_search'
+gem 'kaminari'
 
 group :development, :test do
   gem 'spring'

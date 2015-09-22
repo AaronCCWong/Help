@@ -1,0 +1,30 @@
+<h1>Search!</h1>
+
+<label>
+	Query
+	<input type="text" class="query">
+</label>
+
+<section class="results">
+
+<nav>
+	Displaying page number <%= results.pageNum %> out
+	of <%= results.total_count %> results
+	<a class="prev-page" href="javascript:void(0)">Prev</a>
+	<a class="next-page" href="javascript:void(0)">Next</a>
+</nav>
+
+	<% results.each(function (result) { %>
+		<article>
+			<% if (result instanceof YelpClone.Models.Restaurant) { %>
+
+				<a href="#/restaurants/<%= result.id %>">
+					<%= result.escape("name") %>
+				</a>
+				
+				<p><%= result.escape("address") %></p>
+
+			<% } %>
+		</article>
+	<% }) %>
+</section>

@@ -4,4 +4,7 @@ class Restaurant < ActiveRecord::Base
   has_many :reviews
 
   ratyrate_rateable "restaurant"
+
+  include PgSearch
+  multisearchable against: [:name, :address]
 end
