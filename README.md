@@ -17,9 +17,9 @@ never knowing what to eat for lunch. Users can:
 - [x] View restaurant reviews
 - [x] User star rating of a restaurant
 - [x] Implement omniauth
-- [ ] Allow users to add avatars
+- [x] Allow users to add avatars
 - [ ] Add image posts
-- [ ] Add root page
+- [x] Add root page
 - [ ] Add local restaurants to database
 - [ ] View restaurant information
 - [x] Add google maps plugin for map to restaurant
