@@ -7,5 +7,13 @@
 
 <section class="review-body">
   <div id="star-rating"></div>
+
+  <div class="time-ago">
+    <time datetime="<%= review.get('updated_at') %>" class="age"></time>
+    <script type="text/javascript">
+      $('.age').age();
+    </script>
+  </div>
+
   <%= review.escape("body") %>
 </section>
