@@ -16,7 +16,7 @@ YelpClone.Views.ReviewsForm = Backbone.View.extend({
 
     this.$el.find('#star-rate').raty('destroy');
     this.$el.find('#star-rate').raty({
-      path: '/assets/',
+      path: '',
       half: false,
       targetType: 'score',
       targetKeep: true,

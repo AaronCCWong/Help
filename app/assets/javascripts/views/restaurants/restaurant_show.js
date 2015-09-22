@@ -17,7 +17,7 @@ YelpClone.Views.RestaurantShow = Backbone.CompositeView.extend({
     this.getAverageRating();
     this.$el.find('#restaurant-average-rating').raty('destroy');
     this.$el.find('#restaurant-average-rating').raty({
-      path: '/assets/',
+      path: '',
       half: false,
       score: this.getAverageRating.bind(this),
       readOnly: true,
