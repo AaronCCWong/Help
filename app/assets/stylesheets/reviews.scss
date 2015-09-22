@@ -7,6 +7,13 @@
   width: 245px;
 }
 
+.reviewer > .reviewer-name {
+  font-size: 14px;
+  line-height: 1.28571em;
+  font-weight: bold;
+  color: #3b65a7;
+}
+
 .review-body {
   width: 380px;
   float: left;
@@ -20,4 +27,10 @@
   font-size: 12px;
   line-height: 1.5em;
   color: #999;
+}
+
+.reviewer-avatar {
+  border-radius: 4px;
+  width: 60px;
+  height: 60px;
 }

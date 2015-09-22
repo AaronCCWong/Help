@@ -1,9 +1,14 @@
+<section class="reviewer">
+  <div class="reviewer-avatar-container">
+    <img src="<%= user.escape('avatar_url') %>" class="reviewer-avatar">
+  </div>
 
-
-<p class="reviewer">
-  <%= user.escape('first_name') %> <%= user.escape('last_name') %>
-</p>
-
+  <div class="reviewer-name">
+    <a href="#/users/<%= user.id %>">
+      <%= user.escape('first_name') %> <%= user.escape('last_name') %>
+    </a>
+  </div>
+</section>
 
 <section class="review-body">
   <div id="star-rating"></div>
