@@ -3,11 +3,15 @@ YelpClone.Views.Header = Backbone.View.extend({
 
   events: {
     'click .sign-out-link': 'signOut',
-    'click submit-search': 'search'
+    'submit form.search': 'search'
   },
 
   initialize: function() {
+    YelpClone.searchResults = new YelpClone.Collections.SearchResults();
+    YelpClone.searchResults.pageNum = 1;
+
     this.listenTo(YelpClone.currentUser, "signIn signOut", this.render);
+    this.listenTo(YelpClone.searchResults, "sync", this.render);
     this.render();
   },
 
@@ -28,5 +32,18 @@ YelpClone.Views.Header = Backbone.View.extend({
 
   search: function(event) {
     event.preventDefault();
+
+    YelpClone.searchResults.query = this.$(".query").val();
+
+		YelpClone.searchResults.fetch({
+			data: {
+				query: YelpClone.searchResults.query,
+				page: 1
+			}
+		});
+
+		this.$(".query").val('');
+
+    Backbone.history.navigate('#/search', { trigger: true });
   }
 });

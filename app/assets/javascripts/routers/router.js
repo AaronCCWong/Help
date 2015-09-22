@@ -8,7 +8,7 @@ YelpClone.Routers.Router = Backbone.Router.extend({
     'users/new': 'usersNew',
     'users/:id': 'usersShow',
     'session/new': 'signIn',
-    "search": "search",
+    'search' : 'search',
   },
 
   initialize: function(options) {

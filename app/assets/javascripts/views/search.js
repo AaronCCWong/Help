@@ -1,9 +1,7 @@
 YelpClone.Views.Search = Backbone.View.extend({
 
 	initialize: function () {
-		this.searchResults = new YelpClone.Collections.SearchResults();
-		this.searchResults.pageNum = 1;
-		this.listenTo(this.searchResults, "sync", this.render);
+		this.listenTo(YelpClone.searchResults, "sync", this.render);
 	},
 
 	events: {
@@ -15,7 +13,7 @@ YelpClone.Views.Search = Backbone.View.extend({
 
 	render: function () {
 		var content = this.template({
-			results: this.searchResults
+			results: YelpClone.searchResults
 		});
 		this.$el.html(content);
 
@@ -24,25 +22,27 @@ YelpClone.Views.Search = Backbone.View.extend({
 
 	search: function (event) {
 		event.preventDefault();
-		this.searchResults.pageNum = 1;
-		this.searchResults.query = this.$(".query").val();
 
-		this.searchResults.fetch({
+		YelpClone.searchResults.query = this.$(".query").val();
+
+		YelpClone.searchResults.fetch({
 			data: {
-				query: this.searchResults.query,
+				query: YelpClone.searchResults.query,
 				page: 1
 			}
 		});
+
+		this.$(".query").val('');
 	},
 
 	nextPage: function (event) {
-		this.searchResults.fetch({
+		YelpClone.searchResults.fetch({
 			data: {
-				query: this.searchResults.query,
-				page: this.searchResults.pageNum + 1
+				query: YelpClone.searchResults.query,
+				page: YelpClone.searchResults.pageNum + 1
 			},
 			success: function () {
-				this.searchResults.pageNum = this.searchResults.pageNum + 1;
+				YelpClone.searchResults.pageNum = YelpClone.searchResults.pageNum + 1;
 			}.bind(this)
 		});
 	}
