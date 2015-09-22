@@ -94,6 +94,73 @@ header {
   margin: 0 auto;
 }
 
+#search-bar {
+  float: left;
+}
+
+#search-bar > .search > .main-search > input {
+  position: relative;
+  margin-left: 85px;
+
+  border-radius: 3px;
+  padding-left: 37px;
+  padding-right: 5px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border: 1px solid #a70000;
+  background: rgba(250,249,246,0.95);
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+  overflow: hidden;
+  font-size: 14px;
+
+  width: 660px;
+  height: 30px;
+
+  bottom: 3px;
+}
+
+#search-bar > .search > .main-search > .pseudo-input {
+  position: absolute;
+
+  left: 440px;
+  top: 19px;
+  z-index: 2;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+  cursor: default;
+}
+
+#search-bar > .search > .submit-search {
+  position: relative;
+
+  border-radius: 3px;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 6px;
+  margin-left: 5px;
+  width: 40px;
+  height: 30px;
+  line-height: 18px;
+  vertical-align: middle;
+  box-shadow: none;
+  border: 1px solid #7b0000;
+  background: #a20000;
+  background: linear-gradient(#be0100 4%, #a20000 5%, #7c0000 100%);
+}
+
+#search-bar > .search > .submit-search > img {
+  position: absolute;
+  bottom: 5px;
+  left: 9px;
+
+  width: 18px;
+  height: 18px;
+}
+
 .user_session {
   float: right;
   padding-left: 9px;
@@ -192,27 +259,4 @@ header {
   margin-top: 15px;
   color: #333;
   font-size: 14px;
-}
-
-#search-bar > .search > .submit-search {
-  background: image-url('mag_glass.png');
-  background-size: 30px 30px;
-  background-position: 5px;
-  background: #8f0000;
-
-  vertical-align: middle;
-  border: 1px solid #7b0000;
-  box-shadow: none;
-  line-height: 18px;
-  padding: 5px 10px 1px;
-  color: #fff;
-  text-shadow: 0 -1px 0 #760400;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
-  overflow: visible;
-  width: 40px;
-  height: 30px;
-  border-radius: 3px;
 }

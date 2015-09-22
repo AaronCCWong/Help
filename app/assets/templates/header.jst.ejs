@@ -1,10 +1,19 @@
 <div class="main-header group">
   <div id="search-bar">
     <form class="search">
-      <input type="text" name="search[input]">
-      <button class="submit-search"></button>
+      <label class="main-search">
+        <span class="pseudo-input">Find</span>
+        <input
+          type="text"
+          name="search[input]"
+          placeholder="restaurants near a/A">
+      </label>
+      <button class="submit-search">
+        <img src="/assets/magnifying-glass.png">
+      </button>
     </form>
   </div>
+
   <div class="user_session">
     <% if (currentUser.isSignedIn()) { %>
       <a class="sign-out-link" href="#/session/new">Log Out</a>
