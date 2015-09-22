@@ -2,7 +2,8 @@ YelpClone.Views.Header = Backbone.View.extend({
   template: JST['header'],
 
   events: {
-    'click .sign-out-link': 'signOut'
+    'click .sign-out-link': 'signOut',
+    'click submit-search': 'search'
   },
 
   initialize: function() {
@@ -22,5 +23,9 @@ YelpClone.Views.Header = Backbone.View.extend({
         Backbone.history.navigate('#/session/new', { trigger: true });
       }
     });
+  },
+
+  search: function(event) {
+    event.preventDefault();
   }
 });

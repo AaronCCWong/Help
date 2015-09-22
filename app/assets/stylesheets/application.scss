@@ -193,3 +193,26 @@ header {
   color: #333;
   font-size: 14px;
 }
+
+#search-bar > .search > .submit-search {
+  background: image-url('mag_glass.png');
+  background-size: 30px 30px;
+  background-position: 5px;
+  background: #8f0000;
+
+  vertical-align: middle;
+  border: 1px solid #7b0000;
+  box-shadow: none;
+  line-height: 18px;
+  padding: 5px 10px 1px;
+  color: #fff;
+  text-shadow: 0 -1px 0 #760400;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  overflow: visible;
+  width: 40px;
+  height: 30px;
+  border-radius: 3px;
+}
