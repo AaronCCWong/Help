@@ -2,7 +2,7 @@ YelpClone.Views.Header = Backbone.View.extend({
   template: JST['header'],
 
   events: {
-    'click .sign-out-link': 'signOut',
+    'click .log-out-button': 'signOut',
     'submit form.search': 'search'
   },
 
@@ -23,6 +23,7 @@ YelpClone.Views.Header = Backbone.View.extend({
 
   signOut: function(event) {
     event.preventDefault();
+
     YelpClone.currentUser.signOut({
       success: function() {
         Backbone.history.navigate('#/session/new', { trigger: true });

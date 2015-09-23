@@ -1,23 +1,33 @@
 <div class="main-header group">
-  <div id="search-bar">
-    <form class="search">
-      <label class="main-search">
-        <span class="pseudo-input">Find</span>
-        <input
-          type="text"
-          class="query"
-          name="search[input]"
-          placeholder="restaurants near a/A">
-      </label>
-      <button class="submit-search">
-        <img src="/assets/magnifying-glass.png">
-      </button>
-    </form>
+  <div class="header-content-container">
+    <div id="search-bar">
+      <form class="search">
+        <label class="main-search">
+          <span class="pseudo-input">Find</span>
+          <input
+            type="text"
+            class="query"
+            name="search[input]"
+            placeholder="restaurants near a/A">
+        </label>
+        <button class="submit-search">
+          <img src="/assets/magnifying-glass.png">
+        </button>
+      </form>
+    </div>
+
+    <div class="header-nav">
+      <ul class="nav-list">
+        <li>Home</li>
+        <li>About Me</li>
+        <li>Write a Review</li>
+      </ul>
+    </div>
   </div>
 
   <div class="user_session">
     <% if (currentUser.isSignedIn()) { %>
-      <a class="sign-out-link" href="#/session/new">Log Out</a>
+      <a class="log-out-button" href="#/session/new">Log Out</a>
     <% } else { %>
       <ul class="user_session_list">
         <li>

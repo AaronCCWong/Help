@@ -45,6 +45,11 @@
   right: 420px;
 }
 
+.restaurant > .restaurant-tags > .restaurant-tags-list > li {
+  display: inline;
+  list-style-type: none;
+}
+
 .restaurant > .new-review {
   color: #fff;
   background-image: linear-gradient(#ff2000 2%, #ea050b 10%, #d40d04 100%);

@@ -1,4 +1,4 @@
-YelpClone.Views.TaggingsForm = Backbone.View.extend({
+YelpClone.Views.TaggingsListItem = Backbone.View.extend({
   tagName: 'li',
   template: JST['taggings/list_item'],
 
