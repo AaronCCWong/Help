@@ -1,10 +1,11 @@
-<h2><%= user.escape("first_name") %></h2>
-
-<p>This is <%= user.escape('first_name') %>'s profile page.</p>
+<h2 class="user-show-name">
+  <%= user.escape("first_name") %> <%= user.escape("last_name") %>
+</h2>
 
 <img src="<%= user.escape('avatar_url') %>" class="profile-avatar">
 
-<img src="" id="preview-post-image">
+<div class="preview"></div>
+
 <form class="upload-avatar">
   <input type="file" name="user[avatar]" id="input-image">
   <button>Submit</button>

@@ -8,7 +8,7 @@ YelpClone.Routers.Router = Backbone.Router.extend({
     'users/new': 'usersNew',
     'users/:id': 'usersShow',
     'session/new': 'signIn',
-    'search' : 'search',
+    'search' : 'search'
   },
 
   initialize: function(options) {
@@ -72,7 +72,16 @@ YelpClone.Routers.Router = Backbone.Router.extend({
 
   usersShow: function(id) {
     var callback = this.usersShow.bind(this, id);
-    if (!this._requireSignedIn(callback)) { return; }
+    if (!this._requireSignedIn(callback)) {
+      return;
+    } else if (parseInt(id) !== YelpClone.currentUser.id) {
+      this.usersShow(YelpClone.currentUser.id);
+      Backbone.history.navigate(
+        '#/users/' + YelpClone.currentUser.id,
+        { trigger: true }
+      )
+      return;
+    }
 
     var model = this.usersCollection.getOrFetch(id);
     var showView = new YelpClone.Views.UsersShow({

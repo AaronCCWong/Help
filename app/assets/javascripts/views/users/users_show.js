@@ -39,6 +39,7 @@ YelpClone.Views.UsersShow = Backbone.View.extend({
     var that = this;
     var file = event.currentTarget.files[0];
     var reader = new FileReader();
+    this.$el.find('.preview').append('<img src="" id="preview-post-image">');
 
     reader.onloadend = function() {
       that._updatePreview(reader.result);

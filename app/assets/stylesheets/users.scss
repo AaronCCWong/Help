@@ -156,3 +156,21 @@
   margin-top: 50px;
   margin-right: 220px;
 }
+
+.profile-avatar, #preview-post-image {
+  width: 215px;
+  height: 215px;
+}
+
+.profile-avatar {
+  border-radius: 4px;
+}
+
+.user-show-name {
+  font-size: 30px;
+  line-height: 1.2em;
+  color: #333;
+  margin-bottom: 6px;
+  font-weight: bold;
+  margin: 0 0 6px;
+}
