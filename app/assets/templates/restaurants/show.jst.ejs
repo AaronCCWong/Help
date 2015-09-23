@@ -13,7 +13,9 @@
       <div id="map"></div>
       <div class="restaurant-map-info">
         <div class="address">
-          <%= restaurant.escape("address") %>
+          <%= restaurant.escape("street_address") %>
+          <br>
+          <%= restaurant.escape("city_zipcode") %>
         </div>
         <a id="directions-link" href="#/restaurants/<%= restaurant.id %>">
           Get Directions

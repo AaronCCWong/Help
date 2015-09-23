@@ -7,4 +7,8 @@
   <button class="new-review">Write a Review</button>
 </div>
 
-<p class="search-address"><%= result.escape("address") %></p>
+<p class="search-address">
+  <%= result.escape("street_address") %>
+  <br>
+  <%= result.escape("city_zipcode") %>
+</p>

@@ -49,7 +49,9 @@ YelpClone.Views.RestaurantShow = Backbone.CompositeView.extend({
 
   codeAddress: function() {
     this.geocoder.geocode(
-      { 'address': this.model.escape('address') },
+      {
+        'address': this.model.escape('street_address') + this.model.escape('city_zipcode')
+      },
       function(results, status) {
         if (status == google.maps.GeocoderStatus.OK) {
           this._location = results[0].geometry.location;
@@ -87,7 +89,7 @@ YelpClone.Views.RestaurantShow = Backbone.CompositeView.extend({
 
   calcRoute: function() {
     var start = "598 Broadway, New York, NY 10012";
-    var end = this.model.escape('address');
+    var end = this.model.escape('street_address') + this.model.escape('city_zipcode');
     var request = {
       origin: start,
       destination: end,

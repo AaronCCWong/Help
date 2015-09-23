@@ -1,7 +1,8 @@
 <h1>Write a Review</h1>
 <%= restaurant.escape("name") %>
 <br>
-<%= restaurant.escape("address") %>
+<%= restaurant.escape("street_address") %>
+<%= restaurant.escape("city_zipcode") %>
 <h3>Your review</h3>
 <div id="star-rate"></div>
 <textarea name="review[body]"></textarea>
