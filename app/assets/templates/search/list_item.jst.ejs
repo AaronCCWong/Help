@@ -1,0 +1,10 @@
+<div class="search-item">
+  <a href="#/restaurants/<%= result.id %>">
+    <%= result.escape("name") %>
+  </a>
+  <div class="average-restaurant-rating"></div>
+
+  <button class="new-review">Write a Review</button>
+</div>
+
+<p class="search-address"><%= result.escape("address") %></p>

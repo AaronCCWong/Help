@@ -1,6 +1,6 @@
 Restaurant.create(
   name: 'Go!Go!Curry!',
-  address: '231 Thompson St New York, NY 10012'
+  address: "231 Thompson St New York, NY 10012"
 )
 
 Restaurant.create(

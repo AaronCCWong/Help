@@ -1,21 +1,22 @@
-YelpClone.Views.Search = Backbone.View.extend({
-
-	initialize: function () {
-		this.listenTo(YelpClone.searchResults, "sync", this.render);
-	},
-
+YelpClone.Views.Search = Backbone.CompositeView.extend({
 	events: {
-		"change .query": "search",
+		"submit form.search": "search",
 		"click .next-page": "nextPage"
 	},
 
 	template: JST['search/search'],
 
+	initialize: function () {
+		this.listenTo(YelpClone.searchResults, "sync", this.render);
+	},
+
 	render: function () {
-		var content = this.template({
-			results: YelpClone.searchResults
-		});
-		this.$el.html(content);
+		this.$el.html(this.template({ results: YelpClone.searchResults }));
+
+		YelpClone.searchResults.each(function(result) {
+			var view = new YelpClone.Views.SearchListItem({ model: result });
+			this.addSubview(this.$el.find('.results-list'), view);
+		}.bind(this));
 
 		return this;
 	},

@@ -32,8 +32,14 @@
 
 <div class="results-view">
 	<section class="results">
+		<h2>See the business you'd like to review?</h2>
+
+		<% results.each(function (result) { %>
+			<ul class="results-list"></ul>
+		<% }) %>
+
 		<% if (results.total_count > 0) { %>
-			<nav>
+			<nav class="page-count">
 				Displaying page number <%= results.pageNum %> out
 				of <%= results.total_count %> results
 
@@ -46,19 +52,5 @@
 				<% } %>
 			</nav>
 		<% } %>
-
-		<% results.each(function (result) { %>
-			<article>
-				<% if (result instanceof YelpClone.Models.Restaurant) { %>
-
-					<a href="#/restaurants/<%= result.id %>">
-						<%= result.escape("name") %>
-					</a>
-
-					<p><%= result.escape("address") %></p>
-
-				<% } %>
-			</article>
-		<% }) %>
 	</section>
 </div>
