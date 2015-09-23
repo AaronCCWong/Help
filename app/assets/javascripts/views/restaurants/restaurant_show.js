@@ -20,7 +20,7 @@ YelpClone.Views.RestaurantShow = Backbone.CompositeView.extend({
     this.$el.find('#restaurant-average-rating').raty({
       path: '',
       half: false,
-      score: this.getAverageRating.bind(this),
+      score: this.model.get('average_rating'),
       readOnly: true,
       scoreName: 'restaurant[average-rating]'
     });
@@ -45,19 +45,6 @@ YelpClone.Views.RestaurantShow = Backbone.CompositeView.extend({
     this.codeAddress();
 
     return this;
-  },
-
-  getAverageRating: function() {
-    var averageRating = 0;
-    this.model.reviews().each(function(review) {
-      averageRating += parseInt(review.escape('rating'));
-    });
-
-    if (this.model.reviews().length > 0) {
-      return averageRating / this.model.reviews().length;
-    } else {
-      return 0;
-    }
   },
 
   codeAddress: function() {
