@@ -29,7 +29,6 @@ YelpClone.Models.User = Backbone.Model.extend({
 });
 
 YelpClone.Models.CurrentUser = YelpClone.Models.User.extend({
-
   url: "/api/session",
 
   initialize: function(options) {
@@ -80,5 +79,4 @@ YelpClone.Models.CurrentUser = YelpClone.Models.User.extend({
       this.trigger("signOut");
     }
   }
-
 });
