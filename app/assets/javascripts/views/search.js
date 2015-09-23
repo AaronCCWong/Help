@@ -36,6 +36,8 @@ YelpClone.Views.Search = Backbone.View.extend({
 	},
 
 	nextPage: function (event) {
+		event.preventDefault();
+
 		YelpClone.searchResults.fetch({
 			data: {
 				query: YelpClone.searchResults.query,

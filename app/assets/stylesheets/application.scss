@@ -98,7 +98,7 @@ header {
   float: left;
 }
 
-#header-container > .help-logo {
+#header-container > a > .help-logo {
   position: absolute;
   top: 1px;
 
@@ -174,6 +174,7 @@ header {
   float: right;
   padding-left: 9px;
   padding-right: 9px;
+  margin-right: 15px;
 }
 
 .user_session_list > li {
@@ -198,7 +199,7 @@ header {
   background: linear-gradient(#be0100 4%, #a20000 5%, #7c0000 100%);
 }
 
-.sign_up_button:hover {
+.sign_up_button:hover, #header-container > .search > .submit-search:hover {
   background: #8f0000;
   background-image: linear-gradient(#a00100 4%, #8f0000 5%, #600 100%);
 }
@@ -213,7 +214,7 @@ header {
   padding: 0 8px;
 }
 
-.log_in_button:hover {
+.log_in_button:hover, .header-nav > .nav-list > li:hover {
   background-color: #853330;
   box-shadow: inset 0 0 5px rgba(78,2,2,0.76);
 }

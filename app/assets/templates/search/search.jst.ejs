@@ -1,38 +1,64 @@
-<h1>Your next rant awaits</h1>
+<div class="search-top-shelf">
+	<div class="search-heading-container group">
+		<div class="search-form">
+			<h1>Your next rant awaits</h1>
 
-<label>
-	Review everything from your favorite burger to the heated conversation you had
-	with your friends about how many black shirts Jonathan has.
-	<input type="text" class="query">
-</label>
+			<p>
+				Review everything from your favorite burger to the heated conversation you
+				had with your friends about how many black shirts Jonathan has.
+			</p>
 
-<section class="results">
-	<% if (results.total_count > 0) { %>
-		<nav>
-			Displaying page number <%= results.pageNum %> out
-			of <%= results.total_count %> results
+			<form class="search">
+	      <label class="main-search">
+	        <span class="pseudo-input">Find</span>
+	        <input
+	          type="text"
+	          class="query"
+	          name="search[input]"
+	          placeholder="restaurants near a/A">
+	      </label>
+	      <button class="submit-search">
+	        <img src="/assets/magnifying-glass.png">
+	      </button>
+	    </form>
+		</div>
 
-			<% if (results.pageNum > 1) { %>
-				<a class="prev-page" href="javascript:void(0)">Prev</a>
-			<% } %>
+		<div class="app-academy-logo">
+			<img src="/assets/app-academy-logo.png">
+		</div>
+	</div>
 
-			<% if (results.pageNum < results.total_count) { %>
-				<a class="next-page" href="javascript:void(0)">Next</a>
-			<% } %>
-		</nav>
-	<% } %>
+</div>
 
-	<% results.each(function (result) { %>
-		<article>
-			<% if (result instanceof YelpClone.Models.Restaurant) { %>
+<div class="results-view">
+	<section class="results">
+		<% if (results.total_count > 0) { %>
+			<nav>
+				Displaying page number <%= results.pageNum %> out
+				of <%= results.total_count %> results
 
-				<a href="#/restaurants/<%= result.id %>">
-					<%= result.escape("name") %>
-				</a>
+				<% if (results.pageNum > 1) { %>
+					<a class="prev-page" href="javascript:void(0)">Prev</a>
+				<% } %>
 
-				<p><%= result.escape("address") %></p>
+				<% if (results.pageNum < results.total_count) { %>
+					<a class="next-page" href="javascript:void(0)">Next</a>
+				<% } %>
+			</nav>
+		<% } %>
 
-			<% } %>
-		</article>
-	<% }) %>
-</section>
+		<% results.each(function (result) { %>
+			<article>
+				<% if (result instanceof YelpClone.Models.Restaurant) { %>
+
+					<a href="#/restaurants/<%= result.id %>">
+						<%= result.escape("name") %>
+					</a>
+
+					<p><%= result.escape("address") %></p>
+
+				<% } %>
+			</article>
+		<% }) %>
+	</section>
+</div>
