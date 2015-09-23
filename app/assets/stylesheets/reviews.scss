@@ -34,3 +34,54 @@
   width: 60px;
   height: 60px;
 }
+
+.home-reviewer > .home-reviewer-avatar-container > img {
+  float: left;
+
+  width: 60px;
+  height: 60px;
+}
+
+.home-review-body {
+  float: right;
+  width: 555px;
+  margin-left: 10px;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.28571em;
+}
+
+.home-reviewer-name-container {
+  float: left;
+
+  display: inline-block;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.28571em;
+}
+
+.home-reviewer-name-container > .home-reviewer-name {
+  font-size: 14px;
+  line-height: 1.28571em;
+  font-weight: bold;
+  color: #3b65a7;
+}
+
+.home-reviewer-name-container > .home-restaurant-name {
+  font-size: 14px;
+  line-height: 1.28571em;
+  color: #3b65a7;
+}
+
+#home-star-rating {
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.home-time-ago {
+  float: right;
+
+  font-size: 12px;
+  line-height: 1.5em;
+  color: #999;
+}

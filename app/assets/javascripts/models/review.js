@@ -10,6 +10,11 @@ YelpClone.Models.Review = Backbone.Model.extend({
       delete(response.user);
     }
 
+    if (response.restaurant) {
+      this.restaurant().set(response.restaurant, { parse: true });
+      delete(response.restaurant);
+    }
+
     return response;
   },
 
@@ -19,5 +24,13 @@ YelpClone.Models.Review = Backbone.Model.extend({
     }
 
     return this._author;
+  },
+
+  restaurant: function() {
+    if (!this._restaurant) {
+      this._restaurant = new YelpClone.Models.Restaurant();
+    }
+
+    return this._restaurant;
   }
 });

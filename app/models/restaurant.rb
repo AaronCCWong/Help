@@ -11,6 +11,6 @@ class Restaurant < ActiveRecord::Base
 
   def average_rating
     sum = reviews.inject(0) { |sum, review| sum + review.rating }
-    sum / reviews.length
+    reviews.length > 0 ? sum / reviews.length : 0
   end
 end

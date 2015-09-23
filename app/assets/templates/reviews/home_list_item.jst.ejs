@@ -1,0 +1,29 @@
+<section class="home-reviewer">
+  <div class="home-reviewer-avatar-container">
+    <img src="<%= user.escape('avatar_url') %>" class="home-reviewer-avatar">
+  </div>
+
+</section>
+
+<section class="home-review-body group">
+  <div class="home-reviewer-name-container">
+    <a class="home-reviewer-name" href="#/users/<%= user.id %>">
+      <%= user.escape('first_name') %> <%= user.escape('last_name') %>
+    </a>
+    wrote a review for
+    <a class="home-restaurant-name" href="#/restaurants/<%= restaurant.id %>">
+      <%= restaurant.escape('name') %>
+    </a>
+  </div>
+
+  <div class="home-time-ago">
+    <time datetime="<%= review.get('updated_at') %>" class="age"></time>
+    <script type="text/javascript">
+      $('.age').age();
+    </script>
+  </div>
+
+  <div id="home-star-rating"></div>
+
+  <%= review.escape("body") %>
+</section>

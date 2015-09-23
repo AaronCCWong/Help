@@ -10,7 +10,7 @@ YelpClone.Views.Home = Backbone.CompositeView.extend({
     this.$el.addClass('homepage-container');
 
     this.collection.each(function(review) {
-      var view = new YelpClone.Views.ReviewsListItem({ model: review });
+      var view = new YelpClone.Views.ReviewsHomeListItem({ model: review });
       this.addSubview(this.$el.find('ul.recent-reviews'), view);
     }.bind(this));
 
