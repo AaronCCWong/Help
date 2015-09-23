@@ -55,6 +55,11 @@
   line-height: 1.5em;
 }
 
+.sign_up_wrapper {
+  margin-left: 60px;
+  display: inline-block;
+}
+
 .sign_up_wrapper button {
   display: inline-block;
   vertical-align: middle;
@@ -72,6 +77,10 @@
   box-shadow: 0 1px 1px rgba(0,0,0,0.3);
 }
 
+.sign_up_wrapper > form {
+  margin-top: 30px;
+}
+
 .has-account {
   color: #999;
   font-weight: normal;
@@ -83,4 +92,67 @@
 
 .has-account > a {
   color: #3b65a7;
+}
+
+.sign-up-form-top {
+  text-align: center;
+
+  border-bottom: 1px solid #ccccc8;
+}
+
+.sign-up-form-top > h1 {
+  padding-top: 20px;
+
+  font-size: 22px;
+  color: #c41200;
+  margin-bottom: 6px;
+  line-height: 1.28571em;
+  font-weight: bold;
+  margin: 0 0 6px;
+}
+
+.sign-up-form-top > .rushed-lunch {
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #333;
+  padding-bottom: 12px;
+}
+
+.sign-up-form-top > .omniauth {
+  display: block;
+  padding-right: 28px;
+  padding-left: 28px;
+  line-height: 24px;
+
+  text-shadow: 0 -1px 0 #364e8f;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(#4a64ab, #3e5697);
+  border-color: #3c4d82;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 12px;
+}
+
+.sign-up-form-top > .disclaimer {
+  color: #555;
+  font-size: 12px;
+  line-height: 1.5em;
+  margin-bottom: 25px;
+}
+
+.app-academy-logo-sign-up {
+  float: right;
+
+  width: 250px;
+  height: 250px;
+  margin-top: 50px;
+  margin-right: 220px;
 }
