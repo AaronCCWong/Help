@@ -28,8 +28,8 @@ u = User.create(
   email: 'aarn.wong@gmail.com',
   password: 'password'
 )
-u.avatar = File.open('/Users/aaronwong/desktop/yelp-clone/app/assets/images/aaron-wong.jpg')
-u.save!
+# u.avatar = File.open('/Users/aaronwong/desktop/yelp-clone/app/assets/images/aaron-wong.jpg')
+# u.save!
 
 u = User.create(
   first_name: 'Aiven',
@@ -37,8 +37,8 @@ u = User.create(
   email: 'aiven.song@gmail.com',
   password: 'password'
 )
-u.avatar = File.open('/Users/aaronwong/desktop/yelp-clone/app/assets/images/aiven-song.jpg')
-u.save!
+# u.avatar = File.open('/Users/aaronwong/desktop/yelp-clone/app/assets/images/aiven-song.jpg')
+# u.save!
 
 u = User.create(
   first_name: 'Derek',
@@ -46,8 +46,8 @@ u = User.create(
   email: 'derek.chan@gmail.com',
   password: 'password'
 )
-u.avatar = File.open('/Users/aaronwong/desktop/yelp-clone/app/assets/images/derek-chan.jpg')
-u.save!
+# u.avatar = File.open('/Users/aaronwong/desktop/yelp-clone/app/assets/images/derek-chan.jpg')
+# u.save!
 
 u = User.create(
   first_name: 'Ariel',
@@ -55,8 +55,8 @@ u = User.create(
   email: 'ariel.hou@gmail.com',
   password: 'password'
 )
-u.avatar = File.open('/Users/aaronwong/desktop/yelp-clone/app/assets/images/ariel-hou.jpg')
-u.save!
+# u.avatar = File.open('/Users/aaronwong/desktop/yelp-clone/app/assets/images/ariel-hou.jpg')
+# u.save!
 
 u = User.create(
   first_name: 'Edmund',
@@ -64,8 +64,8 @@ u = User.create(
   email: 'edmund.wright@gmail.com',
   password: 'password'
 )
-u.avatar = File.open('/Users/aaronwong/desktop/yelp-clone/app/assets/images/edmund-wright.jpg')
-u.save!
+# u.avatar = File.open('/Users/aaronwong/desktop/yelp-clone/app/assets/images/edmund-wright.jpg')
+# u.save!
 
 u = User.create(
   first_name: 'Jake',
@@ -73,8 +73,8 @@ u = User.create(
   email: 'jake.park@gmail.com',
   password: 'password'
 )
-u.avatar = File.open('/Users/aaronwong/desktop/yelp-clone/app/assets/images/jake-park.jpg')
-u.save!
+# u.avatar = File.open('/Users/aaronwong/desktop/yelp-clone/app/assets/images/jake-park.jpg')
+# u.save!
 
 u = User.create(
   first_name: 'Jordan',
@@ -82,8 +82,8 @@ u = User.create(
   email: 'jordan.roth@gmail.com',
   password: 'password'
 )
-u.avatar = File.open('/Users/aaronwong/desktop/yelp-clone/app/assets/images/jordan-roth.jpg')
-u.save!
+# u.avatar = File.open('/Users/aaronwong/desktop/yelp-clone/app/assets/images/jordan-roth.jpg')
+# u.save!
 
 u = User.create(
   first_name: 'Leah',
@@ -91,8 +91,8 @@ u = User.create(
   email: 'Leah.Lin@gmail.com',
   password: 'password'
 )
-u.avatar = File.open('/Users/aaronwong/desktop/yelp-clone/app/assets/images/leah-lin.jpg')
-u.save!
+# u.avatar = File.open('/Users/aaronwong/desktop/yelp-clone/app/assets/images/leah-lin.jpg')
+# u.save!
 
 u = User.create(
   first_name: 'Marwan',
@@ -100,8 +100,8 @@ u = User.create(
   email: 'Marwan.Sulaiman@gmail.com',
   password: 'password'
 )
-u.avatar = File.open('/Users/aaronwong/desktop/yelp-clone/app/assets/images/marwan-sulaiman.jpg')
-u.save!
+# u.avatar = File.open('/Users/aaronwong/desktop/yelp-clone/app/assets/images/marwan-sulaiman.jpg')
+# u.save!
 
 Review.create(
   user_id: 1,
