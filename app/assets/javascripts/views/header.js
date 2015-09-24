@@ -3,7 +3,7 @@ YelpClone.Views.Header = Backbone.View.extend({
 
   events: {
     'click .log-out-button': 'signOut',
-    'submit form.search': 'search'
+    'submit form.header-search': 'search'
   },
 
   initialize: function() {

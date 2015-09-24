@@ -112,7 +112,7 @@ header {
   height: 80px;
 }
 
-#header-container > .search > .main-search > input {
+#header-container > .header-search > .main-search > input {
   position: relative;
   margin-left: 87px;
 
@@ -133,7 +133,7 @@ header {
   bottom: 3px;
 }
 
-#header-container > .search > .main-search > .pseudo-input {
+#header-container > .header-search > .main-search > .pseudo-input {
   position: relative;
 
   left: 125px;
@@ -145,7 +145,7 @@ header {
   cursor: default;
 }
 
-#header-container > .search > .submit-search {
+#header-container > .header-search > .submit-search {
   position: relative;
 
   border-radius: 3px;
@@ -166,7 +166,7 @@ header {
   background: linear-gradient(#be0100 4%, #a20000 5%, #7c0000 100%);
 }
 
-#header-container > .search > .submit-search > img {
+#header-container > .header-search > .submit-search > img {
   position: absolute;
   bottom: 5px;
   left: 9px;
