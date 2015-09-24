@@ -1,11 +1,11 @@
-class HelpfulnessController < ApplicationController
+class Api::HelpfulnessesController < ApplicationController
   def index
     @helpfulnesses = Helpfulness.all
     render :index
   end
 
   def create
-    @helpfulness = Helpfulness.create(helpfulness_params)
+    @helpfulness = Helpfulness.new(helpfulness_params)
     if @helpfulness.save
       render json: @helpfulness
     else
@@ -22,6 +22,8 @@ class HelpfulnessController < ApplicationController
   private
 
   def helpfulness_params
+    puts "------------------"
+    puts params
     params.require(:helpfulness).permit(:helpfulness, :review_id, :user_id)
   end
 end

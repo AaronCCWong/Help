@@ -15,6 +15,11 @@ YelpClone.Models.Review = Backbone.Model.extend({
       delete(response.restaurant);
     }
 
+    if (response.helpfulness) {
+      this.helpfulness().set(response.helpfulness, { parse: true });
+      delete(response.helpfulness);
+    }
+
     return response;
   },
 
@@ -32,5 +37,13 @@ YelpClone.Models.Review = Backbone.Model.extend({
     }
 
     return this._restaurant;
+  },
+
+  helpfulnesses: function() {
+    if (!this._helpfulnesses) {
+      this._helpfulnesses = new YelpClone.Models.Helpfulness();
+    }
+
+    return this._helpfulnesses;
   }
 });

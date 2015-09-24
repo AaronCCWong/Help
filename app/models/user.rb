@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  validates :first_name, :last_name, :email, :session_token, null: false
+  validates :first_name, :last_name, :email, :session_token, presence: true
   validates :password, length: { minimum: 8, allow_nil: true }
   validates :email, uniqueness: true
 
@@ -10,6 +10,7 @@ class User < ActiveRecord::Base
   after_initialize :ensure_session_token
 
   has_many :reviews
+  has_many :helpfulness
 
   ratyrate_rater
 

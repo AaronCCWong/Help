@@ -25,6 +25,25 @@ YelpClone.Models.User = Backbone.Model.extend({
         options.error && options.error(model, response, options);
       }
     });
+  },
+
+  parse: function(response) {
+    if (response.helpfulness) {
+      this.helpfulness().set(response.helpfulness, { parse: true });
+      delete(response.helpfulness);
+    }
+
+    return response;
+  },
+
+  helpfulness: function() {
+    if (!this._helpfulness) {
+      this._helpfulness = new YelpClone.Collections.Helpfulness([], {
+        user: this
+      });
+    }
+
+    return this._helpfulness;
   }
 });
 

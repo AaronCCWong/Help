@@ -7,14 +7,16 @@ Rails.application.routes.draw do
     get "/search", to: "search#search"
 
     resources :restaurants, only: [:index, :create, :new, :show] do
-      resources :reviews, only: [:create, :new]
+      resources :reviews, only: [:show, :create, :new]
       resources :taggings, only: [:create, :show]
     end
 
     resource :session, only: [:create, :show, :destroy]
     resources :users
     resources :reviews, only: [:index, :update, :edit, :destroy] do
-      resources :helpfulness, only: [:index, :create, :destroy]
+      resources :helpfulnesses, only: [:create, :destroy]
     end
+
+    resources :helpfulnesses, only: [:index]
   end
 end

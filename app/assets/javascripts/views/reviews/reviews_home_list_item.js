@@ -2,7 +2,8 @@ YelpClone.Views.ReviewsHomeListItem = Backbone.View.extend({
   tagName: 'li',
   template: JST['reviews/home_list_item'],
 
-  initialize: function() {
+  initialize: function(options) {
+    this.helpfulnessCollection = options.helpfulnessCollection;
     this.listenTo(this.model, "sync", this.render);
   },
 
@@ -24,6 +25,12 @@ YelpClone.Views.ReviewsHomeListItem = Backbone.View.extend({
       readOnly: true,
       scoreName: 'review[rating]'
     });
+
+    var view = new YelpClone.Views.HelpfulnessNew({
+      review: this.model,
+      collection: this.helpfulnessCollection
+    });
+    this.$el.find('.review-helpfulness-buttons').html(view.render().$el);
 
     return this;
   }

@@ -18,6 +18,11 @@ class Api::ReviewsController < ApplicationController
     render json: @review
   end
 
+  def show
+    @review = Review.find(params[:id])
+    render :show
+  end
+
   def update
 
   end
