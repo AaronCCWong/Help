@@ -20,7 +20,7 @@ YelpClone.Views.Search = Backbone.CompositeView.extend({
 
 		YelpClone.searchResults.each(function(result) {
 			var view = new YelpClone.Views.SearchListItem({ model: result });
-			this.addSubview(this.$el.find('.results-list'), view);
+			this.addSubview('.results-list', view);
 		}.bind(this));
 
 		this.geocoder = new google.maps.Geocoder();
@@ -91,5 +91,12 @@ YelpClone.Views.Search = Backbone.CompositeView.extend({
 			return -restaurant.get('number_of_reviews');
 		};
 		YelpClone.searchResults.sort();
-	}
+	},
+
+	remove: function() {
+    Backbone.CompositeView.prototype.remove.call(this);
+
+    YelpClone.searchResults = new YelpClone.Collections.SearchResults();
+    YelpClone.searchResults.pageNum = 1;
+  }
 });

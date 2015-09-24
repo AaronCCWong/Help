@@ -24,7 +24,6 @@ never knowing what to eat for lunch. Users can:
 - [ ] View restaurant information
 - [x] Add google maps plugin for map to restaurant
 - [x] Search for restaurants by name
-- [ ] Search for restaurants by taggings
 - [ ] Vote on the helpfulness of reviews
 
 ## Design Docs
@@ -94,6 +93,7 @@ on whether a review from another user is useful, funny, or cool.
 [Details][phase-six]
 
 ### Bonus Features (TBD)
+- [ ] Search for restaurants by taggings
 - [ ] Paginate search results
 - [ ] Track number of reviews for each user
 - [ ] Search filters
