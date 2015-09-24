@@ -20,10 +20,10 @@ never knowing what to eat for lunch. Users can:
 - [x] Allow users to add avatars
 - [ ] Add image posts
 - [x] Add root page
-- [ ] Add local restaurants to database
+- [x] Add local restaurants to database
 - [ ] View restaurant information
 - [x] Add google maps plugin for map to restaurant
-- [ ] Search for restaurants by name
+- [x] Search for restaurants by name
 - [ ] Search for restaurants by taggings
 - [ ] Vote on the helpfulness of reviews
 

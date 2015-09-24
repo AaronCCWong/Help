@@ -1,25 +1,33 @@
 Restaurant.create(
   name: 'Go!Go!Curry!',
   street_address: '231 Thompson St',
-  city_zipcode: 'New York, NY 10012'
+  city_zipcode: 'New York, NY 10012',
+  latitude: 40.729500,
+  longitude: -73.999026
 )
 
 Restaurant.create(
   name: 'Blue Ribbon Fried Chicken',
   street_address: '28 E 1st St',
-  city_zipcode: 'New York, NY 10003'
+  city_zipcode: 'New York, NY 10003',
+  latitude: 40.724535,
+  longitude: -73.991019
 )
 
 Restaurant.create(
   name: 'Meatball Shop',
   street_address: '84 Stanton St',
-  city_zipcode: 'New York, NY 10002'
+  city_zipcode: 'New York, NY 10002',
+  latitude: 40.721660,
+  longitude: -73.988781
 )
 
 Restaurant.create(
   name: 'Chipotle',
   street_address: '625 Broadway',
-  city_zipcode: 'New York, NY 10012'
+  city_zipcode: 'New York, NY 10012',
+  latitude: 40.726052,
+  longitude: -73.996539
 )
 
 u = User.create(

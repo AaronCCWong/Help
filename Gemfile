@@ -21,6 +21,7 @@ gem 'figaro'
 gem 'omniauth-facebook'
 gem 'pg_search'
 gem 'kaminari'
+gem 'geocoder'
 
 group :development, :test do
   gem 'spring'

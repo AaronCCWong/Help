@@ -12,7 +12,6 @@ YelpClone.Views.RestaurantsForm = Backbone.View.extend({
 
   render: function() {
     this.$el.html(this.template());
-    this.$el.addClass('tags-form');
 
     return this;
   },
