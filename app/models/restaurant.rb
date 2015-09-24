@@ -19,4 +19,8 @@ class Restaurant < ActiveRecord::Base
   def full_address
     street_address + city_zipcode
   end
+
+  def number_of_reviews
+    reviews.length
+  end
 end
