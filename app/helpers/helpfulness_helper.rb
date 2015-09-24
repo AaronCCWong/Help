@@ -1,0 +1,2 @@
+module HelpfulnessHelper
+end

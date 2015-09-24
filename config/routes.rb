@@ -13,6 +13,8 @@ Rails.application.routes.draw do
 
     resource :session, only: [:create, :show, :destroy]
     resources :users
-    resources :reviews, only: [:index, :update, :edit, :destroy]
+    resources :reviews, only: [:index, :update, :edit, :destroy] do
+      resources :helpfulness, only: [:index, :create, :destroy]
+    end
   end
 end
