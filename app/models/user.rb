@@ -39,6 +39,8 @@ class User < ActiveRecord::Base
         password: SecureRandom::urlsafe_base64
       )
     end
+
+    user
   end
 
   def password=(password)
