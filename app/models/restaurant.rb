@@ -3,6 +3,7 @@ class Restaurant < ActiveRecord::Base
 
   has_many :reviews
   has_many :taggings
+  has_many :photos
 
   ratyrate_rateable "restaurant"
   geocoded_by :full_address

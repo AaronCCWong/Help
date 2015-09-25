@@ -11,6 +11,7 @@ class User < ActiveRecord::Base
 
   has_many :reviews
   has_many :helpfulness
+  has_many :photos
 
   ratyrate_rater
 

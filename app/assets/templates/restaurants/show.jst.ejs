@@ -22,9 +22,29 @@
         </a>
       </div>
     </div>
-    <a class="new-review" href="#/restaurants/<%= restaurant.id %>/reviews/new">
-      Write a Review
-    </a>
+
+    <div class="top-shelf-buttons">
+      <ul>
+        <li>
+          <a
+            class="new-review"
+            href="#/restaurants/<%= restaurant.id %>/reviews/new">
+            Write a Review
+          </a>
+        </li>
+        <li>
+          <a
+            class="new-photo"
+            href="#/restaurants/<%= restaurant.id %>/photos/new">
+            Add a Photo
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="restaurant-photos">
+      <ul class="restaurant-photos-list"></ul>
+    </div>
   </div>
 </div>
 

@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     resources :restaurants, only: [:index, :create, :new, :show] do
       resources :reviews, only: [:show, :create, :new]
       resources :taggings, only: [:create, :show]
+      resources :photos, only: [:create]
     end
 
     resource :session, only: [:create, :show, :destroy]

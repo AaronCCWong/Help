@@ -1,33 +1,36 @@
-YelpClone.Views.UsersShow = Backbone.View.extend({
-  template: JST['users/show'],
+YelpClone.Views.PhotosForm = Backbone.View.extend({
+  template: JST['photos/new'],
 
   events: {
-    "submit form.upload-avatar": "submitAvatar",
+    'submit .upload-restaurant-image': 'addPhotos',
     "change #input-image": "fileInputChange"
   },
 
-  initialize: function(options){
-    this.listenTo(this.model, "sync", this.render);
+  initialize: function(options) {
+    this.restaurant = options.restaurant;
   },
 
-  render: function(){
-    var html = this.template({ user: this.model });
-    this.$el.html(html);
+  render: function() {
+    this.$el.html(this.template());
+    this.$el.addClass('newRestaurantPhoto');
 
     return this;
   },
 
-  submitAvatar: function(event) {
+  addPhotos: function(event) {
     event.preventDefault();
+
     var file = this.$('#input-image')[0].files[0];
     var formData = new FormData();
-    formData.append('user[avatar]', file);
-    debugger
+    formData.append('photo[image]', file);
+    formData.append('photo[user_id]', YelpClone.currentUser.id);
+    formData.append('photo[restaurant_id]', this.restaurant.id);
+
     this.model.saveFormData(formData, {
       success: function() {
-        this.collection.add(this.model);
+        this.restaurant.photos().add(this.model);
         Backbone.history.navigate(
-          '#/users/' + this.model.id,
+          '#/restaurants/' + this.restaurant.id,
           { trigger: true }
         );
       }.bind(this)
@@ -39,7 +42,7 @@ YelpClone.Views.UsersShow = Backbone.View.extend({
     var that = this;
     var file = event.currentTarget.files[0];
     var reader = new FileReader();
-    this.$el.find('.preview').append('<img src="" id="preview-post-image">');
+    this.$el.find('.preview').append('<img src="" id="preview-restaurant-image">');
 
     reader.onloadend = function() {
       that._updatePreview(reader.result);
@@ -53,6 +56,6 @@ YelpClone.Views.UsersShow = Backbone.View.extend({
   },
 
   _updatePreview: function(src) {
-    this.$el.find('#preview-post-image').attr("src", src);
+    this.$el.find('#preview-restaurant-image').attr("src", src);
   }
 });

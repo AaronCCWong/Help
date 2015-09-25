@@ -50,7 +50,18 @@
   list-style-type: none;
 }
 
-.restaurant > .new-review {
+.restaurant > .top-shelf-buttons > ul {
+  margin-top: 20px;
+
+  float: right;
+}
+
+.restaurant > .top-shelf-buttons > ul > li {
+  display: inline;
+  list-style-type: none;
+}
+
+.restaurant > .top-shelf-buttons > ul > li > .new-review {
   color: #fff;
   background-image: linear-gradient(#ff2000 2%, #ea050b 10%, #d40d04 100%);
   border: 1px solid #a50508;
@@ -65,11 +76,41 @@
   vertical-align: middle;
   display: inline-block;
 
+  padding-top: 8px;
+  padding-bottom: 8px;
   padding-left: 22px;
   padding-right: 15px;
-  margin-top: 20px;
+}
 
-  float: right;
+.restaurant > .top-shelf-buttons > ul > li > .new-photo {
+  line-height: 16px;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid rgba(0,0,0,0.2);
+  vertical-align: middle;
+  background: linear-gradient(#fff, #eee);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.restaurant > .restaurant-photos > ul {
+  position: relative;
+  top: 132px;
+  left: 303px;
+}
+
+.restaurant > .restaurant-photos > ul > li {
+  display: inline;
+  list-style-type: none;
+}
+
+.restaurant > .restaurant-photos > ul > li > img {
+  width: 220px;
+  height: 220px;
 }
 
 .map-container {

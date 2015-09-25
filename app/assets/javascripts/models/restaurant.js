@@ -12,6 +12,11 @@ YelpClone.Models.Restaurant = Backbone.Model.extend({
       delete(response.taggings);
     }
 
+    if (response.photos) {
+      this.photos().set(response.photos, { parse: true });
+      delete(response.photos);
+    }
+
     return response;
   },
 
@@ -31,7 +36,17 @@ YelpClone.Models.Restaurant = Backbone.Model.extend({
         restaurant: this
       });
     }
-    
+
     return this._taggings;
+  },
+
+  photos: function() {
+    if (!this._photos) {
+      this._photos = new YelpClone.Collections.Photos([], {
+        restaurant: this
+      });
+    }
+
+    return this._photos;
   }
 });

@@ -35,6 +35,15 @@ YelpClone.Views.RestaurantShow = Backbone.CompositeView.extend({
       this.addSubview(this.$el.find('ul.reviews-list'), view);
     }.bind(this));
 
+    var i = 0;
+    this.model.photos().each(function(photo) {
+      this
+        .$el
+        .find('.restaurant-photos-list')
+        .append('<li><img class="" src="' + photo.escape("image_url") + '"></li>');
+      if (i === 3) { return; }
+    }.bind(this));
+
     this.geocoder = new google.maps.Geocoder();
     var mapOptions = {
       center: { lat: 40.7295, lng: -73.999026 },
