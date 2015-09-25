@@ -1,10 +1,27 @@
-<h1>Write a Review</h1>
-<%= restaurant.escape("name") %>
-<br>
-<%= restaurant.escape("street_address") %>
-<%= restaurant.escape("city_zipcode") %>
-<h3>Your review</h3>
-<div id="star-rate"></div>
-<textarea name="review[body]"></textarea>
+<div class="new-review-content-container group">
+  <div class="new-review-content">
+    <h1>Write a Review</h1>
+    <a href="#/restaurants/<%= restaurant.id %>">
+      <%= restaurant.escape("name") %>
+    </a>
+    <br>
+    <div class="new-reivew-address">
+      <%= restaurant.escape("street_address") %>
+      <%= restaurant.escape("city_zipcode") %>
+    </div>
 
-<button class="post-review">Post Review</button>
+    <h3>Your review</h3>
+    <form class="new-review-form">
+      <div id="star-rate"></div>
+      <textarea name="review[body]"
+        placeholder="Your review will help your fellow App Academy students know which restaurants are bad and which are worse."></textarea>
+
+      <button class="post-review">Post Review</button>
+    </form>
+  </div>
+
+  <div class="new-review-example-container">
+    <h1>Reviews for <%= restaurant.escape("name") %></h1> 
+    <ul class="new-review-example-list"></ul>
+  </div>
+</div>

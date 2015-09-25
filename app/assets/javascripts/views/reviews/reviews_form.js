@@ -1,5 +1,4 @@
-YelpClone.Views.ReviewsForm = Backbone.View.extend({
-  tagName: 'form',
+YelpClone.Views.ReviewsForm = Backbone.CompositeView.extend({
   template: JST['reviews/new'],
 
   events: {
@@ -13,6 +12,7 @@ YelpClone.Views.ReviewsForm = Backbone.View.extend({
 
   render: function() {
     this.$el.html(this.template({ restaurant: this.restaurant }));
+    this.$el.addClass('new-review-container');
 
     this.$el.find('#star-rate').raty('destroy');
     this.$el.find('#star-rate').raty({
@@ -22,6 +22,12 @@ YelpClone.Views.ReviewsForm = Backbone.View.extend({
       targetKeep: true,
       scoreName: 'review[rating]'
     });
+
+    this.restaurant.reviews().sort().each(function(review) {
+      var view = new YelpClone.Views.ReviewsListItem({ model: review });
+      this.$el.find('.new-review-example-list').append(view.render().$el);
+    }.bind(this));
+
     return this;
   },
 
