@@ -224,6 +224,13 @@ Review.create(
 )
 
 Review.create(
+  user_id: 4,
+  restaurant_id: 1,
+  body: 'Hole-in-the-wall curry shop near NYU, with an excellent katsukare- (freshly fried pork cutlet with rich curry sauce on a generous rice portion.  Other customers looked very satisfied with chicken katsu, or even the plain curry on rice.  Not many frills, but good food quickly at a great price. Whenever I come here, my boyfriend always makes me bring home a grand slam for him. He threatens to not pay the rent if I do not.',
+  rating: 5
+)
+
+Review.create(
   user_id: 8,
   restaurant_id: 3,
   body: 'Way too noisy and the communal seating is way too cramped. The meatballs are nothing special at all. I ordered vegetarian meatballs but they gave me the wrong order. I am vegetarian so it was really bad. I was so mad. Dont believe the hype about this place. The food is mediocre at best. The service is the worst.',
@@ -249,11 +256,4 @@ Review.create(
   restaurant_id: 2,
   body: 'Good chicken but I left here hungry. Came here on a late night starving and ordered the "Wing Man". This place is indeed unique and way better than other fast food chicken places such as Popeyes and KFC. They have a  nice selection of sauces and soda flavors. Unfortunately my meal was not fulfilling. It came with 3 tiny pieces of chicken, a basket full of fries and cole slaw. The chicken was seasoned very well with a great dry rub and the fries were very good. Cole slaw was pretty good as well. I would have easily given this place 3.5-4 stars because it is indeed good fast food but the prices dont match up with the portions. Extra pieces of chicken start at $3 and up for just one piece. I was ready to entirely eat another meal after finishing. I would definitely come back here but next time I would like to try a sandwich which hopefully will be more filling.',
   rating: 3
-)
-
-Review.create(
-  user_id: 4,
-  restaurant_id: 1,
-  body: 'Hole-in-the-wall curry shop near NYU, with an excellent katsukare- (freshly fried pork cutlet with rich curry sauce on a generous rice portion.  Other customers looked very satisfied with chicken katsu, or even the plain curry on rice.  Not many frills, but good food quickly at a great price. Whenever I come here, my boyfriend always makes me bring home a grand slam for him. He threatens to not pay the rent if I do not.',
-  rating: 5
 )

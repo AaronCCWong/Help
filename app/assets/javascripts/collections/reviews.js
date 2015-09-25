@@ -6,12 +6,12 @@ YelpClone.Collections.Reviews = Backbone.Collection.extend({
   },
 
   comparator: function(review) {
-    return review.get('updated_at');
+    return -review.get('updated_at');
   },
 
   url: function() {
     if (!this.restaurant) {
-      return '/api/reviews'; 
+      return '/api/reviews';
     }
 
     return this.restaurant.url() + '/reviews';
