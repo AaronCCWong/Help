@@ -102,6 +102,22 @@ Restaurant.create(
   longitude: -73.996402
 )
 
+Restaurant.create(
+  name: 'Mighty Quinn’s Barbeque',
+  street_address: '103 2nd Ave',
+  city_zipcode: 'New York, NY 10003',
+  latitude: 40.727636,
+  longitude: -73.988768
+)
+
+Restaurant.create(
+  name: 'Wendy’s',
+  street_address: '650 Broadway',
+  city_zipcode: 'New York, NY 10012',
+  latitude: 40.726669,
+  longitude: -73.995277
+)
+
 u = User.create(
   first_name: 'Aaron',
   last_name: 'Wong',

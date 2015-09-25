@@ -304,7 +304,7 @@ header {
 }
 
 .da-space > a > img {
-  position: fixed;
+  position: absolute;
 
   display: block;
   width: 250px;
@@ -315,16 +315,17 @@ header {
 
 .da-space > a > .celadon {
   background-color: #232f3e;
+  top: 1200px;
 }
 
 .da-space > a > .cocktail {
-  top: 250px;
+  top: 1330px;
 }
 
 .da-space > a > .hackoverflow {
-  top: 370px;
+  top: 1450px;
 }
 
 .da-space > a > .domio {
-  top: 480px;
+  top: 1560px;
 }
