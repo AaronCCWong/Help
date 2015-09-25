@@ -269,6 +269,7 @@ header {
 }
 
 .recent-reviews-list {
+  float: left;
   width: 630px;
   margin-left: 30px;
 }
@@ -295,8 +296,35 @@ header {
   font-size: 14px;
 }
 
-.ad-space > #ad {
-  background-color: #232f3e;
+.da-space {
+  position: relative;
+  float: right;
+  width: 250px;
+  margin-right: 30px;
+}
+
+.da-space > a > img {
+  position: fixed;
+
+  display: block;
   width: 250px;
   height: 110px;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+
+.da-space > a > .celadon {
+  background-color: #232f3e;
+}
+
+.da-space > a > .cocktail {
+  top: 250px;
+}
+
+.da-space > a > .hackoverflow {
+  top: 370px;
+}
+
+.da-space > a > .domio {
+  top: 480px;
 }

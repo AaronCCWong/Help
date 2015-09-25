@@ -111,12 +111,6 @@ u = User.create(
 # u.avatar = File.open('/Users/aaronwong/desktop/yelp-clone/app/assets/images/marwan-sulaiman.jpg')
 # u.save!
 
-Review.create(
-  user_id: 1,
-  restaurant_id: 1,
-  body: 'I can eat here all day!',
-  rating: 5
-)
 
 Review.create(
   user_id: 2,
@@ -144,6 +138,13 @@ Review.create(
   restaurant_id: 3,
   body: 'I decided to take a weekend trip to NYC and in my 48 hours there I decided I really wanted to eat here. I hauled my ass all the way there in the freezing cold all the while telling my friends how awesome this place is. BIG MISTAKE. For some reason I actually read the entire menu and discovered that they have PORK in ALL of their meatballs except the veggie balls. Imagine my disappointment when I learned that the place I worked so hard to get to puts PORK in every item. I was pissed. But that wasnt the best part. When I asked the waitress about this, she stated it was true and proceeded to explain why PORK wasnt that bad. She informed us that it was a white meat and it was actually good for you and then told us she was a VEGETARIAN. Youre trying to convince me that PORK isnt that bad when clearly Im not eating it for religious reasons and youre a vegetarian? I thought that was kind of ridiculous. I ended up ordering the veggie balls and was very unhappy with my meal. I still thoroughly enjoyed the salad and the ice cream sandwiches but the fact that they tell their customers that PORK is in every meatball in tiny fine print at the bottom really pisses me off. Im sorry but when I order a veggie meatball, I dont expect there to be pork in it. Ill never return again. P.S. I really think they should change their name to The PORK MEATBALL SHOP.',
   rating: 1
+)
+
+Review.create(
+  user_id: 1,
+  restaurant_id: 1,
+  body: 'The grand slam was kind of weak. Go with the world champion.',
+  rating: 5
 )
 
 Review.create(
