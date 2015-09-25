@@ -30,6 +30,78 @@ Restaurant.create(
   longitude: -73.996539
 )
 
+Restaurant.create(
+  name: 'Ramen Setagaya',
+  street_address: '34 1/2 St Marks Pl',
+  city_zipcode: 'New York, NY 10003',
+  latitude: 40.728715,
+  longitude: -73.988246
+)
+
+Restaurant.create(
+  name: '100 Montaditos',
+  street_address: '176 Bleecker St',
+  city_zipcode: 'New York, NY 10012',
+  latitude: 40.728803,
+  longitude: -74.000872
+)
+
+Restaurant.create(
+  name: 'Parm',
+  street_address: '248 Mulberry St',
+  city_zipcode: 'New York, NY 10012',
+  latitude: 40.723027,
+  longitude: -73.995646
+)
+
+Restaurant.create(
+  name: 'Mamoun’s Falafel',
+  street_address: '119 MacDougal St',
+  city_zipcode: 'New York, NY 10012',
+  latitude: 40.730268,
+  longitude: -74.000417
+)
+
+Restaurant.create(
+  name: 'Xi’an Famous Foods',
+  street_address: '81 St Marks Pl',
+  city_zipcode: 'New York, NY 10003',
+  latitude: 40.727888,
+  longitude: -73.985458
+)
+
+Restaurant.create(
+  name: 'The Kati Roll Company',
+  street_address: '99 MacDougal St',
+  city_zipcode: 'New York, NY 10012',
+  latitude: 40.729628,
+  longitude: -74.001029
+)
+
+Restaurant.create(
+  name: 'Bareburger',
+  street_address: '535 Laguardia Pl',
+  city_zipcode: 'New York, NY 10012',
+  latitude: 40.728468,
+  longitude: -73.998614
+)
+
+Restaurant.create(
+  name: 'Manousheh',
+  street_address: '193 Bleecker St',
+  city_zipcode: 'New York, NY 10012',
+  latitude: 40.729360,
+  longitude: -74.001399
+)
+
+Restaurant.create(
+  name: 'Ruby’s',
+  street_address: '219 Mulberry St',
+  city_zipcode: 'New York, NY 10012',
+  latitude: 40.722303,
+  longitude: -73.996402
+)
+
 u = User.create(
   first_name: 'Aaron',
   last_name: 'Wong',
@@ -109,6 +181,15 @@ u = User.create(
   password: 'password'
 )
 # u.avatar = File.open('/Users/aaronwong/desktop/yelp-clone/app/assets/images/marwan-sulaiman.jpg')
+# u.save!
+
+u = User.create(
+  first_name: 'Jason',
+  last_name: 'Zwick',
+  email: 'ironyinabox@gmail.com',
+  password: 'password'
+)
+# u.avatar = File.open('/Users/aaronwong/desktop/yelp-clone/app/assets/images/jason-zwick.jpg')
 # u.save!
 
 
