@@ -22,7 +22,7 @@ YelpClone.Views.UsersShow = Backbone.View.extend({
     var file = this.$('#input-image')[0].files[0];
     var formData = new FormData();
     formData.append('user[avatar]', file);
-    debugger
+    
     this.model.saveFormData(formData, {
       success: function() {
         this.collection.add(this.model);
