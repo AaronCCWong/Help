@@ -106,11 +106,17 @@
   background-color: #fff;
 }
 
-.results-view > .results {
-  padding-left: 30px;
+.results-view > .results-search-container {
+  width: 1000px;
+  margin: 0 auto;
 }
 
-.results-view > .results > h2 {
+.results-view > .results-search-container > .results {
+  padding-left: 30px;
+  float: left;
+}
+
+.results-view > .results-search-container > .results > h2 {
   font-size: 21px;
   font-weight: bold;
   line-height: 1.28571em;
@@ -120,7 +126,7 @@
   padding-bottom: 7px;
 }
 
-.results-view > .results > .results-list > li {
+.results-view > .results-search-container > .results > .results-list > li {
   border-top: 1px solid #ccccc8;
   width: 635px;
 
@@ -128,18 +134,18 @@
   padding-bottom: 20px;
 }
 
-.results-view > .results > .results-list > li > .search-item {
+.results-view > .results-search-container > .results > .results-list > li > .search-item {
   float: left;
 
   width: 410px;
 }
 
-.results-view > .results > .results-list > li > .search-item > a {
+.results-view > .results-search-container > .results > .results-list > li > .search-item > a {
   font-size: 16px;
   color: #333;
 }
 
-.results-view > .results > .results-list > li > .search-item > .new-review {
+.results-view > .results-search-container > .results > .results-list > li > .search-item > .new-review {
   color: #333;
   margin: 9px 0 0;
   display: inline-block;
@@ -156,24 +162,29 @@
   box-shadow: 0 1px 1px rgba(0,0,0,0.1), inset 0 -2px 2px rgba(0,0,0,0.05), inset 0 -1px 1px #fff;
 }
 
-.results-view > .results > .results-list > li > .search-item > .new-review:hover {
+.results-view > .results-search-container > .results > .results-list > li > .search-item > .new-review:hover {
   background: linear-gradient(#ff2000 2%, #ea050b 10%, #d40d04 100%);
   border-color: #a50508;
   color: #fff;
   box-shadow: 0 1px 1px rgba(0,0,0,0.3);
 }
 
-.results-view > .results > .results-list > li > .search-address {
+.results-view > .results-search-container > .results > .results-list > li > .search-address {
   float: left;
   font-size: 14px;
   color: #333;
   line-height: 1.28571em;
 }
 
-.results-view > .results > .page-count {
+.results-view > .results-search-container > .results > .page-count {
   border-top: 1px solid #ccccc8;
   border-bottom: 1px solid #ccccc8;
   width: 635px;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+#search-map {
+  margin-top: 20px;
+  float: right;
 }

@@ -27,31 +27,32 @@
 			<img src="/assets/app-academy-logo.png">
 		</div>
 	</div>
-
 </div>
 
-<div class="results-view hide">
-	<section class="results">
-		<h2>See the business you'd like to review?</h2>
-		<button class="sort-by-rating">Highest Rated</button>
-		<button class="sort-by-reviews">Most Reviewed</button>
-		<ul class="results-list"></ul>
+<div class="results-view hide group">
+	<div class="results-search-container">
+		<section class="results">
+			<h2>See the business you'd like to review?</h2>
+			<button class="sort-by-rating">Highest Rated</button>
+			<button class="sort-by-reviews">Most Reviewed</button>
+			<ul class="results-list"></ul>
 
-		<% if (results.total_count > 0) { %>
-			<nav class="page-count">
-				Displaying page number <%= results.pageNum %> out
-				of <%= results.total_count %> results
+			<% if (results.total_count > 0) { %>
+				<nav class="page-count">
+					Displaying page number <%= results.pageNum %> out
+					of <%= results.total_count %> results
 
-				<% if (results.pageNum > 1) { %>
-					<a class="prev-page" href="javascript:void(0)">Prev</a>
-				<% } %>
+					<% if (results.pageNum > 1) { %>
+						<a class="prev-page" href="javascript:void(0)">Prev</a>
+					<% } %>
 
-				<% if (results.pageNum < results.total_count) { %>
-					<a class="next-page" href="javascript:void(0)">Next</a>
-				<% } %>
-			</nav>
-		<% } %>
-	</section>
+					<% if (results.pageNum < results.total_count) { %>
+						<a class="next-page" href="javascript:void(0)">Next</a>
+					<% } %>
+				</nav>
+			<% } %>
+		</section>
 
-	<div id="search-map"></div>
+		<div id="search-map"></div>
+	</div>
 </div>
