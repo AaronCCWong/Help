@@ -18,13 +18,12 @@ never knowing what to eat for lunch. Users can:
 - [x] User star rating of a restaurant
 - [x] Implement omniauth
 - [x] Allow users to add avatars
-- [ ] Add image posts
+- [x] Add image posts
 - [x] Add root page
 - [x] Add local restaurants to database
-- [ ] View restaurant information
-- [x] Add google maps plugin for map to restaurant
+- [x] Add google maps plugin for directions to restaurant
 - [x] Search for restaurants by name
-- [ ] Vote on the helpfulness of reviews
+- [x] Vote on the helpfulness of reviews
 
 ## Design Docs
 * [View Wireframes][views]
@@ -94,6 +93,8 @@ on whether a review from another user is useful, funny, or cool.
 
 ### Bonus Features (TBD)
 - [ ] Search for restaurants by taggings
+- [ ] View restaurant information
+- [ ] Add infinite scroll to first page reviews
 - [ ] Paginate search results
 - [ ] Track number of reviews for each user
 - [ ] Search filters
