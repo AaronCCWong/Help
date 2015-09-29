@@ -213,3 +213,69 @@
   cursor: pointer;
   font-size: 30px;
 }
+
+.restaurant-new {
+  width: 960px;
+  margin: 0 auto;
+
+  background-color: #fff;
+  border-bottom: 1px solid #ccccc8;
+  border-left: 1px solid #ccccc8;
+  border-right: 1px solid #ccccc8;
+}
+
+.restaurant-new > .restaurant-new-container {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.restaurant-new > .restaurant-new-container > h1 {
+  padding-top: 20px;
+  padding-bottom: 8px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #c41200;
+  text-align: center;
+}
+
+.restaurant-new > .restaurant-new-container > h2 {
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #333;
+  padding-bottom: 12px;
+  text-align: center;
+}
+
+.restaurant-new > .restaurant-new-container > input {
+  box-sizing: border-box;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+  padding: 5px;
+  border-radius: 2px;
+  border: 1px solid #bbb;
+  background: rgba(250, 250, 249, 0.9);
+  font-size: 14px;
+  line-height: 1.28571em;
+  margin: 0 0 9px;
+  display: block;
+  width: 100%;
+}
+
+.restaurant-new > .restaurant-new-container > .add-restaurant {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 7px 16px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  text-shadow: 0 -1px 0 #760400;
+  width: 100%;
+  background: #ea050b;
+  border: 1px solid #a50508;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+
+  margin-bottom: 30px;
+}
