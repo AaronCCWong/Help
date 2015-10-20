@@ -18,7 +18,7 @@ YelpClone.Views.RestaurantsForm = Backbone.View.extend({
 
   addRestaurant: function(event) {
     event.preventDefault();
-    var formData = $(event.currentTarget).parent().serializeJSON();
+    var formData = $(event.currentTarget).parent().parent().parent().serializeJSON();
 
     this.model.save(formData.restaurant, {
       success: function(model) {
