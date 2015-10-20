@@ -45,6 +45,8 @@ YelpClone.Views.Header = Backbone.View.extend({
 
 		this.$(".query").val('');
 
-    Backbone.history.navigate('#/search', { trigger: true });
+    if (!event.currentTarget.baseURI.includes('#/search')) {
+      Backbone.history.navigate('#/search', { trigger: true });
+    }
   }
 });
