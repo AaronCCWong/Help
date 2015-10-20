@@ -9,7 +9,7 @@ YelpClone.Views.Home = Backbone.CompositeView.extend({
   render: function() {
     this.$el.html(this.template());
     this.$el.addClass('homepage-container group');
-
+    
     this.collection.sort().each(function(review) {
       var view = new YelpClone.Views.ReviewsHomeListItem({
         model: review,

@@ -6,7 +6,8 @@ YelpClone.Collections.Reviews = Backbone.Collection.extend({
   },
 
   comparator: function(review) {
-    return -review.get('updated_at');
+    var date = new Date(review.get('updated_at'))
+    return -date;
   },
 
   url: function() {
