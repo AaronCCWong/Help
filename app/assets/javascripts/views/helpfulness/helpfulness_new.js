@@ -22,11 +22,12 @@ YelpClone.Views.HelpfulnessNew = Backbone.View.extend({
       return;
     }
 
+    var helpfulName = $(event.currentTarget).find('button').attr('class')
     var formData = {
       helpfulness: {
         user_id: YelpClone.currentUser.id,
         review_id: this.review.id,
-        helpfulness: $(event.currentTarget).find('button').attr('class')
+        helpfulness: helpfulName
       }
     };
 
