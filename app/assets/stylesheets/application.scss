@@ -246,7 +246,7 @@ header {
 /* HOMEPAGE */
 
 .homepage-container {
-  width: 960px;
+  width: 695px;
   background-color: #fff;
   margin: 0 auto;
   border-bottom: 1px solid #ccccc8;
@@ -262,16 +262,17 @@ header {
   padding-top: 20px;
   padding-bottom: 10px;
   display: block;
-  width: 900px;
-  margin: 0 auto;
+  width: 630px;
+  margin-left: 30px;
+  margin-right: 30px;
 
   border-bottom: 1px solid #e5e5e1;
 }
 
 .recent-reviews-list {
-  float: left;
   width: 630px;
   margin-left: 30px;
+  margin-right: 30px;
 }
 
 .recent-reviews-list > h1 {
@@ -294,38 +295,4 @@ header {
   margin-top: 15px;
   color: #333;
   font-size: 14px;
-}
-
-.da-space {
-  position: relative;
-  float: right;
-  width: 250px;
-  margin-right: 30px;
-}
-
-.da-space > a > img {
-  position: absolute;
-
-  display: block;
-  width: 250px;
-  height: 110px;
-  margin-right: 30px;
-  margin-top: 20px;
-}
-
-.da-space > a > .celadon {
-  background-color: #232f3e;
-  top: 1200px;
-}
-
-.da-space > a > .cocktail {
-  top: 1330px;
-}
-
-.da-space > a > .hackoverflow {
-  top: 1450px;
-}
-
-.da-space > a > .domio {
-  top: 1560px;
 }
