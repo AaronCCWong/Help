@@ -77,23 +77,25 @@ YelpClone.Views.RestaurantShow = Backbone.CompositeView.extend({
     this.$el.find('.modal-screen').toggleClass('hide')
     this.$el.find('.modal-map').toggleClass('hide')
 
-    event.preventDefault();
-    this.directionsDisplay = new google.maps.DirectionsRenderer();
-    this.directionsService = new google.maps.DirectionsService();
-    var restaurant = new google.maps.LatLng(this._location.H, this._location.L);
+    if (this.$el.find('#map-panel').children().length < 1) {
+      event.preventDefault();
+      this.directionsDisplay = new google.maps.DirectionsRenderer();
+      this.directionsService = new google.maps.DirectionsService();
+      var restaurant = new google.maps.LatLng(this._location.H, this._location.L);
 
-    var mapOptions = {
-      zoom: 11,
-      center: restaurant
+      var mapOptions = {
+        zoom: 11,
+        center: restaurant
+      }
+
+      var newMap = new google.maps.Map(
+        document.getElementById('map-directions'), mapOptions
+      );
+      this.directionsDisplay.setMap(newMap);
+      this.directionsDisplay.setPanel(document.getElementById('map-panel'));
+
+      this.calcRoute();
     }
-
-    var newMap = new google.maps.Map(
-      document.getElementById('map-directions'), mapOptions
-    );
-    this.directionsDisplay.setMap(newMap);
-    this.directionsDisplay.setPanel(document.getElementById('map-panel'));
-
-    this.calcRoute();
   },
 
   calcRoute: function() {
