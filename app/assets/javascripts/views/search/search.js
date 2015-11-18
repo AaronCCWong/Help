@@ -1,7 +1,6 @@
 YelpClone.Views.Search = Backbone.CompositeView.extend({
 	events: {
 		"submit form.search": "search",
-		"click .next-page": "nextPage",
 		"click .sort-by-rating": "sortByRating",
 		"click .sort-by-reviews": "sortByReviews"
 	},
@@ -59,20 +58,6 @@ YelpClone.Views.Search = Backbone.CompositeView.extend({
 		});
 
 		this.$(".query").val('');
-	},
-
-	nextPage: function (event) {
-		event.preventDefault();
-
-		YelpClone.searchResults.fetch({
-			data: {
-				query: YelpClone.searchResults.query,
-				page: YelpClone.searchResults.pageNum + 1
-			},
-			success: function () {
-				YelpClone.searchResults.pageNum = YelpClone.searchResults.pageNum + 1;
-			}.bind(this)
-		});
 	},
 
 	sortByRating: function(event) {
