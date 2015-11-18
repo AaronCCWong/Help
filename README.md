@@ -94,7 +94,6 @@ on whether a review from another user is useful, funny, or cool.
 ### Bonus Features (TBD)
 - [ ] Search for restaurants by taggings
 - [ ] View restaurant information
-- [ ] Add infinite scroll to first page reviews
 - [ ] Paginate search results
 - [ ] Track number of reviews for each user
 - [ ] Search filters
