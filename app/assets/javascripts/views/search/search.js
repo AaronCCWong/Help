@@ -25,7 +25,7 @@ YelpClone.Views.Search = Backbone.CompositeView.extend({
 		this.geocoder = new google.maps.Geocoder();
     var mapOptions = {
       center: { lat: 40.724948, lng: -73.9967097 },
-      zoom: 11
+      zoom: 13
     };
 
 		this._map = new google.maps.Map(
