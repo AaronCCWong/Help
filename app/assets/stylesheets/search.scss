@@ -104,6 +104,8 @@
 
 .results-view {
   background-color: #fff;
+
+  border-bottom: 1px solid #ccccc8;
 }
 
 .results-view > .results-search-container {
@@ -178,7 +180,6 @@
 
 .results-view > .results-search-container > .results > .page-count {
   border-top: 1px solid #ccccc8;
-  border-bottom: 1px solid #ccccc8;
   width: 635px;
   padding-top: 15px;
   padding-bottom: 15px;
