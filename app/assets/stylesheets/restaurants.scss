@@ -190,20 +190,24 @@
   position: absolute;
   z-index: 3;
 
-  top: 200px;
-  left: 35%;
+  top: 100px;
+  left: 32%;
   margin-left: -220px;
-  border-radius: 5px;
+  width: 940px;
 }
 
 .map-directions-container > .modal-container > .modal-map > #map-directions {
   float: left;
+
+  border-radius: 5px 0px 0px 5px;
 }
 
 .map-directions-container > .modal-container > .modal-map > #map-panel {
   float: right;
 
   width: 340px;
+  height: 600px;
+  border-radius: 0px 5px 5px 0px;
 }
 
 .hide {
