@@ -20,7 +20,6 @@ YelpClone.Routers.Router = Backbone.Router.extend({
     this.usersCollection.fetch();
 
     this.reviewsCollection = new YelpClone.Collections.Reviews();
-    this.reviewsCollection.fetch();
 
     this.helpfulnessCollection = new YelpClone.Collections.Helpfulness();
     this.helpfulnessCollection.fetch();
@@ -29,6 +28,8 @@ YelpClone.Routers.Router = Backbone.Router.extend({
   },
 
   home: function() {
+    this.reviewsCollection.fetch();
+
     var view = new YelpClone.Views.Home({
       collection: this.reviewsCollection,
       helpfulnessCollection: this.helpfulnessCollection
