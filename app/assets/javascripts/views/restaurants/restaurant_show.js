@@ -4,6 +4,7 @@ YelpClone.Views.RestaurantShow = Backbone.CompositeView.extend({
   events: {
     'click #directions-link': 'getDirections',
     'click .close-button': 'closeModal',
+    'click .modal-screen': 'closeModal',
     'click .new-tag': 'addTags',
     'submit form.tags': 'newTags'
   },
