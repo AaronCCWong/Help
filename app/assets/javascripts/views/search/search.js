@@ -1,8 +1,7 @@
 YelpClone.Views.Search = Backbone.CompositeView.extend({
 	events: {
 		"submit form.search": "search",
-		"click .sort-by-rating": "sortByRating",
-		"click .sort-by-reviews": "sortByReviews"
+		"click .sort": "sortRestaurants"
 	},
 
 	template: JST['search/search'],
@@ -60,20 +59,18 @@ YelpClone.Views.Search = Backbone.CompositeView.extend({
 		this.$(".query").val('');
 	},
 
-	sortByRating: function(event) {
+	sortRestaurants: function(event) {
+		var sorter;
+
 		event.preventDefault();
+		if ($(event.currentTarget).text() === 'Highest Rated') {
+			sorter = 'average_rating';
+		} else {
+			sorter = 'number_of_reviews';
+		}
 
 		YelpClone.searchResults.comparator = function(restaurant) {
-			return -restaurant.get('average_rating');
-		};
-		YelpClone.searchResults.sort();
-	},
-
-	sortByReviews: function(event) {
-		event.preventDefault();
-
-		YelpClone.searchResults.comparator = function(restaurant) {
-			return -restaurant.get('number_of_reviews');
+			return -restaurant.get(sorter);
 		};
 		YelpClone.searchResults.sort();
 	},
