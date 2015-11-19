@@ -63,7 +63,6 @@
 
 .restaurant > .top-shelf-buttons > ul > li > .new-review {
   color: #fff;
-  background-image: linear-gradient(#ff2000 2%, #ea050b 10%, #d40d04 100%);
   border: 1px solid #a50508;
   background: #ea050b;
   box-shadow: 0 1px 1px rgba(0,0,0,0.3);
@@ -75,6 +74,9 @@
   border-radius: 4px;
   vertical-align: middle;
   display: inline-block;
+
+  box-shadow: none;
+  background: linear-gradient(#ff2000 2%, #ea050b 10%, #d40d04 100%);
 
   padding-top: 8px;
   padding-bottom: 8px;

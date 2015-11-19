@@ -1,0 +1,1428 @@
+/* line 5, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/helpfulness.scss */
+.review-helpfulness > .review-helpfulness-q {
+  margin-top: 15px;
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 12px;
+  color: #555;
+}
+
+/* line 14, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/helpfulness.scss */
+.home-review-body > .review-helpfulness > ul > div > li {
+  display: inline;
+}
+
+/* line 18, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/helpfulness.scss */
+.home-review-body > .review-helpfulness > ul > div > li > button {
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 6px;
+  padding: 5px 16px;
+  line-height: 18px;
+  vertical-align: middle;
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: linear-gradient(#fafafa, #e9e9e9);
+}
+
+/* line 34, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/helpfulness.scss */
+.home-review-body > .review-helpfulness > ul > div > li > button > span {
+  color: #fff;
+  border-radius: 50%;
+  background-color: #c41200;
+  padding-bottom: 1px;
+  padding-top: 1px;
+  padding-right: 6px;
+  padding-left: 6px;
+}
+/* line 5, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/photos.scss */
+#preview-restaurant-image {
+  width: 200px;
+  height: 200px;
+}
+/* Page */
+/* line 8, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.top-shelf {
+  position: relative;
+  background-color: #f5f5f1;
+  border-bottom: 1px solid #ccccc8;
+  height: 410px;
+}
+
+/* line 16, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.restaurant {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* line 21, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.restaurant > .restaurant-name {
+  width: 520px;
+  padding-top: 6px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  display: inline-block;
+  float: left;
+  line-height: 1.1666666em;
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  position: relative;
+}
+
+/* line 37, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+#restaurant-average-rating {
+  position: absolute;
+  top: 55px;
+}
+
+/* line 42, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.restaurant > .restaurant-tags {
+  color: #3b65a7;
+  position: relative;
+  top: 57px;
+  right: 420px;
+}
+
+/* line 49, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.restaurant > .restaurant-tags > .restaurant-tags-list > li {
+  display: inline;
+  list-style-type: none;
+}
+
+/* line 54, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.restaurant > .top-shelf-buttons > ul {
+  margin-top: 20px;
+  float: right;
+}
+
+/* line 60, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.restaurant > .top-shelf-buttons > ul > li {
+  display: inline;
+  list-style-type: none;
+}
+
+/* line 65, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.restaurant > .top-shelf-buttons > ul > li > .new-review {
+  color: #fff;
+  border: 1px solid #a50508;
+  background: #ea050b;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  line-height: 20px;
+  text-shadow: 0 -1px 0 #760400;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  vertical-align: middle;
+  display: inline-block;
+  box-shadow: none;
+  background: linear-gradient(#ff2000 2%, #ea050b 10%, #d40d04 100%);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 22px;
+  padding-right: 15px;
+}
+
+/* line 88, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.restaurant > .top-shelf-buttons > ul > li > .new-photo {
+  line-height: 16px;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  vertical-align: middle;
+  background: linear-gradient(#fff, #eee);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* line 103, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.restaurant > .restaurant-photos > ul {
+  position: relative;
+  top: 132px;
+  left: 303px;
+}
+
+/* line 109, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.restaurant > .restaurant-photos > ul > li {
+  display: inline;
+  list-style-type: none;
+}
+
+/* line 114, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.restaurant > .restaurant-photos > ul > li > img {
+  width: 220px;
+  height: 220px;
+}
+
+/* line 119, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.map-container {
+  z-index: 1;
+  position: absolute;
+  top: 133px;
+  background-color: #fff;
+  border: 1px solid #ccccc8;
+  width: 300px;
+  height: 330px;
+}
+
+/* line 130, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.map-container > #map {
+  margin-top: 7px;
+  margin-left: 7px;
+  border: 1px solid #ccccc8;
+}
+
+/* line 136, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.map-container > .restaurant-map-info {
+  margin-left: 10px;
+}
+
+/* line 140, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.map-container > .restaurant-map-info > .address {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* line 147, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+#directions-link {
+  color: #3b65a7;
+  font-size: 14px;
+}
+
+/* line 152, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.reviews-view {
+  padding-top: 75px;
+  background-color: #fff;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccccc8;
+}
+
+/* line 159, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.reviews {
+  width: 630px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+/* line 165, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.reviews > h1 {
+  font-weight: bold;
+  font-size: 21px;
+  color: #c41200;
+  line-height: 1.28571em;
+  margin-bottom: 6px;
+}
+
+/* line 173, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.reviews > .reviews-list > li {
+  border-top: 1px solid #ccccc8;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* Directions */
+/* line 181, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.modal-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* line 192, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.modal-map {
+  position: absolute;
+  z-index: 3;
+  top: 100px;
+  left: 32%;
+  margin-left: -220px;
+  width: 940px;
+}
+
+/* line 202, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.map-directions-container > .modal-container > .modal-map > #map-directions {
+  float: left;
+  border-radius: 5px 0px 0px 5px;
+}
+
+/* line 208, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.map-directions-container > .modal-container > .modal-map > #map-panel {
+  float: right;
+  width: 340px;
+  height: 600px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+/* line 216, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.hide {
+  display: none;
+}
+
+/* line 220, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.map-directions-container > .modal-container > .modal-map > .close-button {
+  color: #fff;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+/* line 226, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.restaurant-new {
+  width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-bottom: 1px solid #ccccc8;
+  border-left: 1px solid #ccccc8;
+  border-right: 1px solid #ccccc8;
+}
+
+/* line 236, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.restaurant-new > .restaurant-new-container {
+  width: 300px;
+  margin: 0 auto;
+}
+
+/* line 241, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.restaurant-new > .restaurant-new-container > h1 {
+  padding-top: 20px;
+  padding-bottom: 8px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #c41200;
+  text-align: center;
+}
+
+/* line 250, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.restaurant-new > .restaurant-new-container > h2 {
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #333;
+  padding-bottom: 12px;
+  text-align: center;
+}
+
+/* line 259, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.restaurant-new > .restaurant-new-container > input {
+  box-sizing: border-box;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+  padding: 5px;
+  border-radius: 2px;
+  border: 1px solid #bbb;
+  background: rgba(250, 250, 249, 0.9);
+  font-size: 14px;
+  line-height: 1.28571em;
+  margin: 0 0 9px;
+  display: block;
+  width: 100%;
+}
+
+/* line 273, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/restaurants.scss */
+.restaurant-new > .restaurant-new-container > .add-restaurant {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 7px 16px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  text-shadow: 0 -1px 0 #760400;
+  width: 100%;
+  background: #ea050b;
+  border: 1px solid #a50508;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+}
+/* line 5, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/reviews.scss */
+.reviewer {
+  float: left;
+  width: 245px;
+}
+
+/* line 10, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/reviews.scss */
+.reviewer > .reviewer-name {
+  font-size: 14px;
+  line-height: 1.28571em;
+  font-weight: bold;
+  color: #3b65a7;
+}
+
+/* line 17, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/reviews.scss */
+.review-body {
+  width: 380px;
+  float: left;
+}
+
+/* line 22, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/reviews.scss */
+.review-body > #star-rating {
+  padding-bottom: 10px;
+}
+
+/* line 26, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/reviews.scss */
+.review-body > .time-ago {
+  font-size: 12px;
+  line-height: 1.5em;
+  color: #999;
+}
+
+/* line 32, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/reviews.scss */
+.reviewer-avatar {
+  border-radius: 4px;
+  width: 60px;
+  height: 60px;
+}
+
+/* line 38, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/reviews.scss */
+.home-reviewer > .home-reviewer-avatar-container > img {
+  float: left;
+  width: 60px;
+  height: 60px;
+  border-radius: 3px;
+}
+
+/* line 47, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/reviews.scss */
+.home-review-body {
+  float: right;
+  width: 555px;
+  margin-left: 10px;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.28571em;
+}
+
+/* line 56, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/reviews.scss */
+.home-reviewer-name-container {
+  float: left;
+  display: inline-block;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.28571em;
+}
+
+/* line 65, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/reviews.scss */
+.home-reviewer-name-container > .home-reviewer-name {
+  font-size: 14px;
+  line-height: 1.28571em;
+  font-weight: bold;
+  color: #3b65a7;
+}
+
+/* line 72, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/reviews.scss */
+.home-reviewer-name-container > .home-restaurant-name {
+  font-size: 14px;
+  line-height: 1.28571em;
+  color: #3b65a7;
+}
+
+/* line 78, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/reviews.scss */
+#home-star-rating {
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+/* line 83, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/reviews.scss */
+.home-time-ago {
+  float: right;
+  font-size: 12px;
+  line-height: 1.5em;
+  color: #999;
+}
+
+/* line 91, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/reviews.scss */
+.new-review-container {
+  background-color: #fff;
+  padding-top: 15px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid #ccccc8;
+}
+
+/* line 98, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/reviews.scss */
+.new-review-content-container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* line 103, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/reviews.scss */
+.new-review-container > .new-review-content-container > .new-review-content {
+  width: 600px;
+  display: inline-block;
+}
+
+/* line 108, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/reviews.scss */
+.new-review-container > .new-review-content-container > .new-review-content > h1 {
+  color: #c41200;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.3125em;
+  padding-bottom: 6px;
+  width: 640px;
+  border-bottom: 1px solid #e5e5e1;
+}
+
+/* line 118, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/reviews.scss */
+.new-review-container > .new-review-content-container > .new-review-example-container > h1 {
+  color: #c41200;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.3125em;
+  padding-bottom: 6px;
+  width: 300px;
+  border-bottom: 1px solid #e5e5e1;
+}
+
+/* line 128, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/reviews.scss */
+.new-review-container > .new-review-content-container > .new-review-content > a {
+  margin-top: 10px;
+  color: #3b65a7;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* line 135, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/reviews.scss */
+.new-review-container > .new-review-content-container > .new-review-content > .new-review-address {
+  font-size: 12px;
+  line-height: 1.5em;
+  display: block;
+  color: #333;
+}
+
+/* line 142, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/reviews.scss */
+.new-review-container > .new-review-content-container > .new-review-content > h3 {
+  font-weight: bold;
+  margin: 0 0 6px;
+  color: #333;
+}
+
+/* line 148, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/reviews.scss */
+.new-review-container > .new-review-content-container > .new-review-content > form {
+  color: #999;
+  border: 1px solid #bbb;
+  margin: 0 0 18px;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+  line-height: 1.28571em;
+  width: 630px;
+  background: rgba(250, 250, 249, 0.9);
+}
+
+/* line 160, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/reviews.scss */
+.new-review-container > .new-review-content-container > .new-review-content > form > button {
+  color: #fff;
+  margin-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  padding: 7px 16px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background: linear-gradient(#ff2000 2%, #ea050b 10%, #d40d04 100%);
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.28571em;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* line 179, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/reviews.scss */
+.new-review-container > .new-review-content-container > .new-review-content > form > #star-rate {
+  margin-left: 15px;
+  margin-top: 20px;
+  width: 592px;
+  border-bottom: 1px solid #e5e5e1;
+}
+
+/* line 186, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/reviews.scss */
+.new-review-container > .new-review-content-container > .new-review-content > form > textarea {
+  width: 600px;
+  height: 140px;
+  padding: 15px;
+  border: 0;
+  resize: none;
+  outline-width: 0;
+  font-size: 14px;
+  background: rgba(250, 250, 249, 0.9);
+}
+
+/* line 197, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/reviews.scss */
+.new-review-example-container {
+  border-left: 1px solid #e5e5e1;
+  padding-left: 15px;
+  float: right;
+  width: 270px;
+}
+
+/* line 204, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/reviews.scss */
+.new-review-example-container > .new-review-example-list > li {
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #e5e5e1;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+/* line 1, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/search.scss */
+.search-top-shelf {
+  border-bottom: 1px solid #ccccc8;
+  height: 280px;
+}
+
+/* line 6, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/search.scss */
+.search-heading-container {
+  margin: 0 auto;
+  margin-top: 60px;
+  width: 940px;
+}
+
+/* line 13, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/search.scss */
+.search-heading-container > .search-form {
+  width: 645px;
+  float: left;
+  margin-left: 10px;
+}
+
+/* line 20, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/search.scss */
+.search-heading-container > .search-form > h1 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* line 29, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/search.scss */
+.search-heading-container > .search-form > p {
+  font-size: 21px;
+  line-height: 1.28571em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* line 37, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/search.scss */
+.search-heading-container > .search-form > .search > .main-search > input {
+  position: relative;
+  border-radius: 3px;
+  padding-left: 37px;
+  padding-right: 5px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border: 1px solid #ccccc8;
+  background: #fff;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-size: 14px;
+  width: 660px;
+  height: 30px;
+  bottom: 3px;
+}
+
+/* line 57, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/search.scss */
+.search-heading-container > .search-form > .search > .main-search > .pseudo-input {
+  position: relative;
+  left: 7px;
+  top: 21px;
+  z-index: 2;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+  cursor: default;
+}
+
+/* line 69, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/search.scss */
+.search-heading-container > .search-form > .search > .submit-search {
+  position: relative;
+  bottom: 33px;
+  left: 663px;
+  border-radius: 3px;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 6px;
+  margin-left: 5px;
+  width: 40px;
+  height: 30px;
+  line-height: 18px;
+  vertical-align: middle;
+  box-shadow: none;
+  border: 1px solid #7b0000;
+  background: #a20000;
+  background: linear-gradient(#be0100 4%, #a20000 5%, #7c0000 100%);
+}
+
+/* line 92, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/search.scss */
+.app-academy-logo {
+  float: right;
+  bottom: 280px;
+  left: 920px;
+}
+
+/* line 98, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/search.scss */
+.app-academy-logo > img {
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+}
+
+/* line 105, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/search.scss */
+.results-view {
+  background-color: #fff;
+  border-bottom: 1px solid #ccccc8;
+}
+
+/* line 111, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/search.scss */
+.results-view > .results-search-container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* line 116, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/search.scss */
+.results-view > .results-search-container > .results {
+  padding-left: 30px;
+  float: left;
+}
+
+/* line 121, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/search.scss */
+.results-view > .results-search-container > .results > h2 {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.28571em;
+  color: #c41200;
+  padding-top: 20px;
+  padding-bottom: 7px;
+}
+
+/* line 131, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/search.scss */
+.results-view > .results-search-container > .results > .results-list > li {
+  border-top: 1px solid #ccccc8;
+  width: 635px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* line 139, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/search.scss */
+.results-view > .results-search-container > .results > .results-list > li > .search-item {
+  float: left;
+  width: 410px;
+}
+
+/* line 145, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/search.scss */
+.results-view > .results-search-container > .results > .results-list > li > .search-item > a {
+  font-size: 16px;
+  color: #333;
+}
+
+/* line 150, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/search.scss */
+.results-view > .results-search-container > .results > .results-list > li > .search-item > .new-review {
+  color: #333;
+  margin: 9px 0 0;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  padding: 7px 16px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background: linear-gradient(#fff, #eee);
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.28571em;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 -2px 2px rgba(0, 0, 0, 0.05), inset 0 -1px 1px #fff;
+}
+
+/* line 167, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/search.scss */
+.results-view > .results-search-container > .results > .results-list > li > .search-item > .new-review:hover {
+  background: linear-gradient(#ff2000 2%, #ea050b 10%, #d40d04 100%);
+  border-color: #a50508;
+  color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* line 174, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/search.scss */
+.results-view > .results-search-container > .results > .results-list > li > .search-address {
+  float: left;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.28571em;
+}
+
+/* line 181, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/search.scss */
+.results-view > .results-search-container > .results > .page-count {
+  border-top: 1px solid #ccccc8;
+  width: 635px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* line 188, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/search.scss */
+#search-map {
+  margin-top: 20px;
+  float: right;
+}
+/* Log In Form */
+/* line 8, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/sessions.scss */
+.sign_in_page {
+  border-top: none;
+  width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 15px 30px 30px;
+  border: 1px solid #ccccc8;
+}
+
+/* line 17, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/sessions.scss */
+.log_in_wrapper {
+  float: left;
+  display: block;
+  width: 49%;
+  border-right: 1px solid #ddd;
+}
+
+/* line 24, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/sessions.scss */
+.log_in_wrapper > form {
+  width: 350px;
+  padding-left: 48px;
+}
+
+/* line 29, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/sessions.scss */
+.log_in_label {
+  font-weight: bold;
+  display: block;
+  float: left;
+  margin-top: 15px;
+  width: 140px;
+  color: #C41200;
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* line 40, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/sessions.scss */
+.log_in_wrapper > form > p > input {
+  text-align: left;
+  margin-top: 10px;
+  width: 200px;
+}
+
+/* line 46, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/sessions.scss */
+.sign_in_button {
+  text-shadow: none;
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+  padding: 5px 8px;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.5em;
+  color: #333;
+  background: linear-gradient(#fff, #eee);
+}
+
+/* line 62, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/sessions.scss */
+.log_in_wrapper > form > h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #c41200;
+  margin: 10px 0 6px;
+}
+
+/* line 69, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/sessions.scss */
+.log_in_wrapper > form > .log_in_instructions {
+  margin: 5px 0;
+}
+
+/* line 73, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/sessions.scss */
+.log_in_wrapper > form > .button {
+  margin: 10px 0 20px;
+  text-align: right;
+}
+
+/* line 78, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/sessions.scss */
+.log_in_wrapper > form > .legal {
+  color: #333;
+  margin-top: 60px;
+}
+
+/* Link To Sign Up */
+/* line 85, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/sessions.scss */
+.no_account_wrapper {
+  float: right;
+  display: block;
+  width: 50%;
+  text-align: center;
+  color: #333;
+}
+
+/* line 93, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/sessions.scss */
+.no_account_width {
+  float: right;
+  width: 390px;
+  padding-right: 48px;
+}
+
+/* line 99, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/sessions.scss */
+.no_account_width > h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #c41200;
+  margin: 10px 0 6px;
+}
+
+/* line 106, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/sessions.scss */
+.no_account_width > p {
+  margin-bottom: 15px;
+}
+
+/* line 110, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/sessions.scss */
+.no_account_width > .help-description {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* line 115, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/sessions.scss */
+.no_account_width > a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  text-shadow: 0 -1px 0 #760400;
+  line-height: 1.28571em;
+  padding: 7px 16px;
+  border: 1px solid #a50508;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  background: #ea050b;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-image: linear-gradient(#ff2000 2%, #ea050b 10%, #d40d04 100%);
+}
+/* line 5, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/users.scss */
+.new_user_page {
+  border-top: none;
+  width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
+  min-height: 720px;
+  padding: 30px;
+  border: 1px solid #ccccc8;
+}
+
+/* line 15, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/users.scss */
+.sign_up_wrapper {
+  padding: 0 15px;
+  width: 300px;
+}
+
+/* line 20, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/users.scss */
+.sign_up_wrapper input[type=text],
+.sign_up_wrapper input[type=password] {
+  display: block;
+  width: 100%;
+  margin: 0 0 9px;
+  box-sizing: border-box;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+  padding: 5px;
+  border-radius: 2px;
+  background: rgba(250, 250, 249, 0.9);
+  border: 1px solid #bbb;
+  font-size: 14px;
+  line-height: 1.28571em;
+}
+
+/* line 35, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/users.scss */
+.name > li {
+  width: 49%;
+  font-size: 0;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+/* line 42, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/users.scss */
+.name > .first_name {
+  float: left;
+}
+
+/* line 46, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/users.scss */
+.name > .last_name {
+  float: right;
+}
+
+/* line 50, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/users.scss */
+.legal {
+  text-align: left;
+  margin-bottom: 12px;
+  color: #555;
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+/* line 58, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/users.scss */
+.sign_up_wrapper {
+  margin-left: 60px;
+  display: inline-block;
+}
+
+/* line 63, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/users.scss */
+.sign_up_wrapper button {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 7px 16px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  text-shadow: 0 -1px 0 #760400;
+  width: 100%;
+  background: #ea050b;
+  border: 1px solid #a50508;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* line 80, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/users.scss */
+.sign_up_wrapper > form {
+  margin-top: 30px;
+}
+
+/* line 84, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/users.scss */
+.has-account {
+  color: #999;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.5em;
+  margin-top: 12px;
+  text-align: right;
+}
+
+/* line 93, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/users.scss */
+.has-account > a {
+  color: #3b65a7;
+}
+
+/* line 97, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/users.scss */
+.sign-up-form-top {
+  text-align: center;
+  border-bottom: 1px solid #ccccc8;
+}
+
+/* line 103, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/users.scss */
+.sign-up-form-top > h1 {
+  padding-top: 20px;
+  font-size: 22px;
+  color: #c41200;
+  margin-bottom: 6px;
+  line-height: 1.28571em;
+  font-weight: bold;
+  margin: 0 0 6px;
+}
+
+/* line 114, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/users.scss */
+.sign-up-form-top > .rushed-lunch {
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #333;
+  padding-bottom: 12px;
+}
+
+/* line 122, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/users.scss */
+.sign-up-form-top > .omniauth {
+  display: block;
+  padding-right: 28px;
+  padding-left: 28px;
+  line-height: 24px;
+  text-shadow: 0 -1px 0 #364e8f;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(#4a64ab, #3e5697);
+  border-color: #3c4d82;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 12px;
+}
+
+/* line 144, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/users.scss */
+.sign-up-form-top > .disclaimer {
+  color: #555;
+  font-size: 12px;
+  line-height: 1.5em;
+  margin-bottom: 25px;
+}
+
+/* line 151, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/users.scss */
+.app-academy-logo-sign-up {
+  float: right;
+  width: 250px;
+  height: 250px;
+  margin-top: 50px;
+  margin-right: 220px;
+}
+
+/* line 160, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/users.scss */
+.profile-avatar, #preview-post-image {
+  width: 215px;
+  height: 215px;
+}
+
+/* line 165, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/users.scss */
+.profile-avatar {
+  border-radius: 4px;
+}
+
+/* line 169, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/users.scss */
+.user-show-name {
+  font-size: 30px;
+  line-height: 1.2em;
+  color: #333;
+  margin-bottom: 6px;
+  font-weight: bold;
+  margin: 0 0 6px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+/* RESET */
+/* line 20, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+html, body, header,
+form, img,
+div, ul, li, h1, h2,
+h3, a, p {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  text-decoration: none;
+  box-sizing: inherit;
+  font: inherit;
+  text-align: inherit;
+  color: inherit;
+  background: transparent;
+}
+
+/* line 38, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+body {
+  background-color: #f5f5f1;
+  font: 12px/1.2 'Helvetica Neue';
+}
+
+/* line 43, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+ul {
+  list-style: none;
+}
+
+/* CLEARFIX */
+/* line 49, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* line 55, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+html, body, #map-canvas,
+#map-directions {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 62, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+#map {
+  height: 135px;
+  width: 286px;
+}
+
+/* line 67, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+#search-map {
+  height: 300px;
+  width: 300px;
+}
+
+/* line 72, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+#map-directions {
+  height: 600px;
+  width: 600px;
+}
+
+/* line 77, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+#map-panel {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+/* Header */
+/* line 84, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+header {
+  padding: 12px 0 6px;
+  position: relative;
+  font-size: 14px;
+  text-shadow: 0 -1px 0 #760400;
+  line-height: 1.28571em;
+  z-index: 5;
+  box-shadow: 0 0 5px rgba(78, 2, 2, 0.76);
+  color: #fff;
+  background: url(/assets/header_stars-f7e6d1ffb505cf45032cab7409ab401207288722465a0808c9f08e73ef11ad73.png) no-repeat center, linear-gradient(#c41200, #af0606);
+  background-position: left top;
+  border-bottom: 1px solid #853330;
+}
+
+/* line 98, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+.main-header {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* line 103, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+#header-container {
+  float: left;
+}
+
+/* line 107, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+#header-container > a > .help-logo {
+  position: absolute;
+  top: 1px;
+  display: inline-block;
+  width: 120px;
+  height: 80px;
+}
+
+/* line 116, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+#header-container > .header-search > .main-search > input {
+  position: relative;
+  margin-left: 87px;
+  border-radius: 3px;
+  padding-left: 37px;
+  padding-right: 5px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border: 1px solid #a70000;
+  background: rgba(250, 249, 246, 0.95);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-size: 14px;
+  width: 660px;
+  height: 30px;
+  bottom: 3px;
+}
+
+/* line 137, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+#header-container > .header-search > .main-search > .pseudo-input {
+  position: relative;
+  left: 125px;
+  bottom: 1px;
+  z-index: 2;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+  cursor: default;
+}
+
+/* line 149, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+#header-container > .header-search > .submit-search {
+  position: relative;
+  border-radius: 3px;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 6px;
+  margin-left: 5px;
+  width: 40px;
+  height: 30px;
+  line-height: 18px;
+  vertical-align: middle;
+  box-shadow: none;
+  border: 1px solid #7b0000;
+  background: #a20000;
+  background: linear-gradient(#be0100 4%, #a20000 5%, #7c0000 100%);
+}
+
+/* line 170, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+#header-container > .header-search > .submit-search > img {
+  position: absolute;
+  bottom: 5px;
+  left: 9px;
+  width: 18px;
+  height: 18px;
+}
+
+/* line 179, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+.user_session {
+  float: right;
+  padding-left: 9px;
+  padding-right: 9px;
+  margin-right: 15px;
+}
+
+/* line 186, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+.user_session_list > li {
+  display: list-item;
+  text-align: center;
+}
+
+/* line 191, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+.sign_up_button, .log-out-button {
+  border-radius: 3px;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 6px;
+  padding: 5px 16px;
+  line-height: 18px;
+  vertical-align: middle;
+  box-shadow: none;
+  border: 1px solid #7b0000;
+  background: #a20000;
+  background: linear-gradient(#be0100 4%, #a20000 5%, #7c0000 100%);
+}
+
+/* line 208, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+.sign_up_button:hover, #header-container > .search > .submit-search:hover {
+  background: #8f0000;
+  background-image: linear-gradient(#a00100 4%, #8f0000 5%, #600 100%);
+}
+
+/* line 213, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+.log_in_button {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 21px;
+  text-shadow: 0 -1px 0 #760400;
+  border-radius: 3px;
+  padding: 0 8px;
+}
+
+/* line 223, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+.log_in_button:hover, .header-nav > .nav-list > li:hover {
+  background-color: #853330;
+  box-shadow: inset 0 0 5px rgba(78, 2, 2, 0.76);
+}
+
+/* line 228, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+.header-nav > .nav-list {
+  margin-left: 112px;
+}
+
+/* line 232, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+.header-nav > .nav-list > li {
+  top: 30px;
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 21px;
+  text-shadow: 0 -1px 0 #760400;
+  border-radius: 3px;
+  padding: 0 8px;
+}
+
+/* HOMEPAGE */
+/* line 249, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+.homepage-container {
+  width: 695px;
+  background-color: #fff;
+  margin: 0 auto;
+  border-bottom: 1px solid #ccccc8;
+  border-left: 1px solid #ccccc8;
+  border-right: 1px solid #ccccc8;
+}
+
+/* line 258, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+.homepage-container > h2 {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  display: block;
+  width: 630px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-bottom: 1px solid #e5e5e1;
+}
+
+/* line 273, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+.recent-reviews-list {
+  width: 630px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* line 279, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+.recent-reviews-list > h1 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 1.28571em;
+  color: #c41200;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+/* line 289, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+.recent-reviews > li {
+  border-top: 1px solid #e5e5e1;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* line 295, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+.recent-reviews > li > .review-body {
+  margin-top: 15px;
+  color: #333;
+  font-size: 14px;
+}
+
+/* line 301, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/* line 307, /Users/aaronwong/Desktop/Help/app/assets/stylesheets/application.scss */
+footer > a {
+  color: #3b65a7;
+}
